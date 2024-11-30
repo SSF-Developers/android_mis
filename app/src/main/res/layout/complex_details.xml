@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/complexes_tool_bar" />
+
+
+    <LinearLayout
+        android:id="@+id/containerComplexDetails"
+        style="@style/FormContainer.ListX"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/name"
+            layout="@layout/element_form_row" />
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_x_small" />
+
+        <include
+            android:id="@+id/address"
+            layout="@layout/element_form_row" />
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_x_small" />
+
+        <include
+            android:id="@+id/date"
+            layout="@layout/element_form_row" />
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_x_small" />
+
+        <include
+            android:id="@+id/client"
+            layout="@layout/element_form_row" />
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_x_small" />
+
+        <include
+            android:id="@+id/cabinCount"
+            layout="@layout/element_form_row" />
+
+        <LinearLayout
+            style="@style/Container.FullWidth"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label"
+                style="@style/Label.FormNameSm"
+                android:layout_width="0dp"
+                android:layout_weight=".75"
+                android:text="Complex Composition"
+                app:layout_constraintRight_toLeftOf="@+id/countStatesColon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/Label.FormNameSm"
+                android:text=" : "
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_marginLeft="@dimen/margin_normal"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabSelectedTextColor="@color/primary_text"
+                app:tabTextColor="@color/grey_250"
+                app:tabPaddingTop="-0dp"
+                app:tabPadding="0dp"
+                android:layout_height="25dp"
+                style="@style/Tab.CabinType"
+                android:layout_width="0dp"
+                android:layout_weight="1.25">
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/TabItem.Card"
+                    android:text="Male WC" />
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/TabItem.Card"
+                    android:text="Female WC" />
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/TabItem.Card"
+                    android:text="Physically Disabled WC" />
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/TabItem.Card"
+                    android:text="Male Urinals" />
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/TabItem.Card"
+                    android:text="Bwt Cabins" />
+
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerMwc" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

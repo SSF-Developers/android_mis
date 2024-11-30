@@ -1,0 +1,70 @@
+<resources>
+    <!--    Page Margins-->
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="page_horizontal_margin">12dp</dimen>
+    <dimen name="page_vertical_margin">12dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="page_padding">12dp</dimen>
+    <dimen name="page_vertical_margin_toolbar">68dp</dimen>
+    //56dp + page_vertical_margin
+
+    <!--    MARGINS-->
+    <dimen name="margin_x_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_x_large">36dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--    FONT SIZE-->
+    <dimen name="text_size_x_small">8sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_H1">24sp</dimen>
+
+    <!--    FONT SIZE-->
+    <dimen name="text_size_state">16sp</dimen>
+    <dimen name="text_size_district">16sp</dimen>
+    <dimen name="text_size_city">14sp</dimen>
+    <dimen name="text_size_complex">12sp</dimen>
+    <dimen name="text_size_state_sm">14sp</dimen>
+    <dimen name="text_size_district_sm">14sp</dimen>
+    <dimen name="text_size_city_sm">12sp</dimen>
+    <dimen name="text_size_complex_sm">10sp</dimen>
+
+    <!--    Shadow-->
+    <dimen name="shadow_normal">4dp</dimen>
+    <dimen name="shadow_raised">12dp</dimen>
+
+    <!--    Form-->
+    <dimen name="form_field_height">40dp</dimen>
+    <dimen name="form_field_horizontal_padding">8dp</dimen>
+    <dimen name="form_field_text_area_height">80dp</dimen>
+
+    <!--    DRAWABLE-->
+    <dimen name="stroke_width_small">1dp</dimen>
+    <dimen name="corner_radius_small">2dp</dimen>
+
+    !-- CARD-->
+    <dimen name="dashboard_card_height">160dp</dimen>
+    <dimen name="dashboard_health_card_height">196dp</dimen>
+    <dimen name="dashboard_water_card_height">156dp</dimen>
+    <dimen name="dashboard_card_details_height">256dp</dimen>
+    <dimen name="dashboard_card_quick_Access_height">196dp</dimen>
+    <dimen name="dashboard_card_config_height">156dp</dimen>
+    <dimen name="report_chart_height">200dp</dimen>
+
+    //CONFIRM-DIALOG
+    <dimen name="padding_form_basic">10dp</dimen>
+    <dimen name="vertical_padding_form">10dp</dimen>
+    <dimen name="text_size_h3">12sp</dimen>
+    <dimen name="label_padding_form">10dp</dimen>
+    <dimen name="text_height_form">40dp</dimen>
+    <dimen name="text_padding_form">10dp</dimen>
+
+    <dimen name="dialog_frag_width"> 400dp</dimen>
+    <dimen name="dialog_frag_height"> 700dp</dimen>
+    <dimen name="shadow_margin">10dp</dimen>
+
+</resources>

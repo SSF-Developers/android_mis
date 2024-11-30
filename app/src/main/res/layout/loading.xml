@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Page.FullWidth"
+    android:background="@drawable/splash">
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_trans_"/>
+
+    <RelativeLayout style="@style/Container.FillParent">
+
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_margin="@dimen/margin_small"
+            style="@style/ImageHolder.CenterHorizontal"
+            android:layout_below="@+id/space0"
+            android:src="@drawable/logo_icon" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            app:SpinKit_Color="@color/primary" />
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/ImageHolder.CenterHorizontal"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_toilet" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/spin_kit"
+            android:text="Loading..."
+            style="@style/Label.LoadingScreen"/>
+
+    </RelativeLayout>
+</FrameLayout>
+
+

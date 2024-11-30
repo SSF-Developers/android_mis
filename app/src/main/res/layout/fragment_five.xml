@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/appDetailsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/applicationDetails"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/deviceUnattendedTimerLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="18dp"
+            android:hint="@string/deviceUnattendedTimer"
+            android:textColorHint="@color/blackNight"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/button_default"
+            app:boxStrokeErrorColor="@color/alert"
+            app:endIconTint="@color/blackNight"
+            app:helperText="@string/deviceUnattendedTimerExplanation"
+            app:helperTextEnabled="false"
+            app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:helperTextTextColor="@color/blackNight"
+            app:hintTextColor="@color/button_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appDetailsTv">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deviceUnattendedTimerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/blackNight"
+                android:textSize="12sp"
+                app:backgroundTint="@color/whiteSmoke" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:id="@+id/applicationTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/deviceUnattendedTimerLayout"
+            app:layout_constraintBottom_toTopOf="@id/upiPaymentStatusLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/appType"
+            android:textColorHint="@color/blackNight"
+            app:endIconTint="@color/black"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/applicationTypeTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/appType"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:id="@+id/upiPaymentStatusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/applicationTypeLayout"
+            app:layout_constraintBottom_toTopOf="@id/languageLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/upiPayment"
+            android:textColorHint="@color/blackNight"
+            app:endIconTint="@color/black"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/upiPaymentStatusTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/appType"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:id="@+id/languageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upiPaymentStatusLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/language"
+            android:textColorHint="@color/blackNight"
+            app:endIconTint="@color/black"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/languageTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/appType"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/marginTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/languageLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/marginTop"
+            android:textColorHint="@color/blackNight"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marginTopEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/blackNight"
+                app:backgroundTint="@color/whiteSmoke"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/marginBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/marginTopLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/marginBottom"
+            android:textColorHint="@color/blackNight"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marginBottomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/blackNight"
+                app:backgroundTint="@color/whiteSmoke"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/marginLeftLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/marginBottomLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/marginLeft"
+            android:textColorHint="@color/blackNight"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marginLeftEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/blackNight"
+                app:backgroundTint="@color/whiteSmoke"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/marginRightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/marginLeftLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/marginRight"
+            android:textColorHint="@color/blackNight"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marginRightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/blackNight"
+                app:backgroundTint="@color/whiteSmoke"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textSize="12sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:id="@+id/isAmsEnabledLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/marginRightLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/isAmsEnabled"
+            android:textColorHint="@color/blackNight"
+            app:endIconTint="@color/black"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:boxStrokeColor="@color/button_default"
+            app:hintTextColor="@color/button_default"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/isAmsEnabledTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/isAmsEnabled"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+                android:textSize="12sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wifiHeading"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/round_corners"
+            android:gravity="center_vertical"
+            android:text="Wi-Fi"
+            android:paddingStart="10dp"
+            android:textColor="@color/blackNight"
+            android:textSize="16sp"
+            app:backgroundTint="@color/button_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/isAmsEnabledLayout" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wifiRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wifiHeading"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="18dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ChooseDefaultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_default"
+            android:text="Choose Default"
+            android:textSize="12sp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/next"
+            app:layout_constraintEnd_toEndOf="@+id/wifiRecyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/wifiRecyclerView" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/left"
+            app:backgroundTint="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/white"
+            tools:targetApi="lollipop"
+            app:fabSize="mini"
+            app:layout_constraintTop_toBottomOf="@id/wifiRecyclerView"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/next"
+            android:src="@drawable/right"
+            app:backgroundTint="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white"
+            app:fabSize="mini"
+            app:layout_constraintTop_toBottomOf="@id/wifiRecyclerView"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

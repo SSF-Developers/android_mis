@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="8"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/field_01"
+        style="@style/Tabular.Name"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/field_02"
+        style="@style/Tabular.Name"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/field_03"
+        style="@style/Tabular.Name"
+        android:text="Amount Received" />
+
+    <TextView
+        android:id="@+id/field_04"
+        style="@style/Tabular.Name"
+        android:text="Amount Transferred" />
+
+    <TextView
+        android:id="@+id/field_05"
+        style="@style/Tabular.Name"
+        android:text="Sukriti Fee" />
+
+    <TextView
+        android:id="@+id/field_06"
+        style="@style/Tabular.Name"
+        android:text="Vendor Fee" />
+
+    <TextView
+        android:id="@+id/field_07"
+        style="@style/Tabular.Name"
+        android:text="Vpa" />
+
+    <TextView
+        android:id="@+id/field_08"
+        style="@style/Tabular.Name"
+        android:text="Tax" />
+
+
+</LinearLayout>
+
+
+

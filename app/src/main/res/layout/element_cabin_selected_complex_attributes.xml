@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/shadow_margin"
+    android:background="@drawable/surface_white_sheet"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_form_basic">
+
+    <TextView
+        style="@style/H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complex Attributes" />
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/complexUuidLabel"
+            style="@style/LabelField"
+            android:text="UUID" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/complexUuid"
+                style="@style/FormField" />
+
+            <TextView
+                android:id="@+id/complexUuidErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/commissioningLabel"
+            style="@style/LabelField"
+            android:text="Commissioning Status" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/commissioning"
+                style="@style/FormField" />
+
+            <TextView
+                android:id="@+id/commissioningErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/smartnessLabel"
+            style="@style/LabelField"
+            android:text="Smartness Level" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/smartness"
+                style="@style/FormField" />
+
+            <TextView
+                android:id="@+id/smartnessErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/wcCountLabel"
+            style="@style/LabelField"
+            android:text="WC Count" />
+
+        <LinearLayout style="@style/FormFieldContainer_Composite">
+
+            <LinearLayout
+                style="@style/FormFieldContainer_CompositeChild"
+                android:weightSum="3">
+
+                <LinearLayout style="@style/FormFieldActionContainer_Horizontal">
+
+                    <TextView
+                        style="@style/SubLabelField"
+                        android:text="Number of Male WCs" />
+
+                    <TextView
+                        android:id="@+id/maleWc"
+                        style="@style/FormField_Numeric" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/FormFieldActionContainer_Horizontal">
+
+                    <TextView
+                        style="@style/SubLabelField"
+                        android:text="Number of Female WCs" />
+
+                    <TextView
+                        android:id="@+id/femaleWc"
+                        style="@style/FormField_Numeric" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/FormFieldActionContainer_Horizontal">
+
+                    <TextView
+                        style="@style/SubLabelField"
+                        android:text="Number of PD WCs" />
+
+                    <TextView
+                        android:id="@+id/pdWc"
+                        style="@style/FormField_Numeric" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wcCountErr"
+                style="@style/ErrorField" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/urinalCountLabel"
+            style="@style/LabelField"
+            android:text="Urinal Count" />
+
+        <LinearLayout style="@style/FormFieldContainer_Composite">
+
+            <LinearLayout
+                style="@style/FormFieldContainer_CompositeChild"
+                android:weightSum="3">
+
+                <LinearLayout style="@style/FormFieldActionContainer_Horizontal">
+
+                    <TextView
+                        style="@style/SubLabelField"
+                        android:text="Number of Urinals" />
+
+                    <TextView
+                        android:id="@+id/urinals"
+                        style="@style/FormField_Numeric" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/FormFieldActionContainer_Horizontal">
+
+                    <TextView
+                        style="@style/SubLabelField"
+                        android:text="Number of Urinal Cabins" />
+
+                    <TextView
+                        android:id="@+id/urinalCabins"
+                        style="@style/FormField_Numeric" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/FormFieldActionContainer_Horizontal">
+
+                    <TextView
+                        style="@style/SubLabelField"
+                        android:text="Number of BWTs" />
+
+                    <TextView
+                        android:id="@+id/bwt"
+                        style="@style/FormField_Numeric" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/urinalCountErr"
+                style="@style/ErrorField" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Container.FullWidth"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabContentStart="112dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/text_border_default"
+        app:tabTextColor="@color/grey_300">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Status" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Health" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Settings" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Profile" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Commands" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        style="@style/FormContainer.ListX"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_x_small"
+        android:padding="@dimen/margin_x_small"
+        app:layout_constraintBottom_toTopOf="@+id/connectionLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/connectionLayout"
+        style="@style/FormContainer.ListX"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_x_small"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/container">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/leftHead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="stats"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"
+                android:textColor="@color/primary_text"
+                android:padding="2dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/leftResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/primary_text"
+                android:text="stats"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/rightHead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="stats"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"
+                android:textColor="@color/primary_text"
+                android:padding="2dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/rightResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/primary_text"
+                android:text="stats" android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

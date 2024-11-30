@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_complex"
+            android:title="Complex" />
+        <item
+            android:id="@+id/nav_incidence"
+            android:title="Incidence Management" />
+
+        <item
+            android:id="@+id/nav_reports"
+            android:title="Reports" />
+    </group>
+
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_administration"
+            android:title="Administration" />
+
+        <item
+            android:id="@+id/nav_usageCollection"
+            android:title="Usage Collection Management" />
+
+        <item
+            android:id="@+id/nav_device_managementHome"
+            android:title="Device Management"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_sign_out"
+            android:title="Sign out" />
+    </group>
+</menu>

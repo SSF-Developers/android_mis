@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/field_01"
+        style="@style/TabularSM.Summary"
+        android:text="User Name " />
+
+    <TextView
+        android:id="@+id/field_02"
+        style="@style/TabularSM.Summary"
+        android:text="User Name " />
+
+    <TextView
+        android:id="@+id/field_03"
+        style="@style/TabularSM.Summary"
+        android:text="User Name " />
+
+    <TextView
+        android:id="@+id/field_04"
+        style="@style/TabularSM.Summary"
+        android:text="User Name " />
+
+    <TextView
+        android:id="@+id/field_05"
+        style="@style/TabularSM.Summary"
+        android:text="User Name " />
+
+<!--    <TextView-->
+<!--        android:id="@+id/field_06"-->
+<!--        style="@style/TabularSM.Summary"-->
+<!--        android:text="User Name " />-->
+
+</LinearLayout>
+
+
+

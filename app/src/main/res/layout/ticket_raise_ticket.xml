@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:layout_marginTop="@dimen/page_vertical_margin_toolbar">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@style/Container.FullWidth"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/Page.FullWidth"
+            android:orientation="vertical">
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/unitSelectionContainer"
+                style="@style/FormContainer.ListX"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/Header.Form"
+                    android:text="Unit Selection"
+                    app:layout_constraintBottom_toBottomOf="@+id/selectUnit"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/selectUnit" />
+
+                <Button
+                    android:id="@+id/selectUnit"
+                    style="@style/Container.Action.Positive.XSmall"
+                    android:text="Select Unit"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:id="@+id/space0"
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/selectUnit" />
+
+                <LinearLayout
+                    android:id="@+id/selectionDetailsContainer"
+                    style="@style/Container.FullWidth"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space0">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/unit"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="Complex"
+                        app:startIconDrawable="@drawable/ic_user_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/FormField.TextInputEditText"
+                            android:focusable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/city"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="City"
+                        app:startIconDrawable="@drawable/ic_user_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/FormField.TextInputEditText"
+                            android:focusable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/district"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="District"
+                        app:startIconDrawable="@drawable/ic_user_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/FormField.TextInputEditText"
+                            android:focusable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <FrameLayout
+                android:id="@+id/ticketDetailsContainer"
+                style="@style/FormContainer.ListX"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    style="@style/Container.FullWidth"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Header.Form"
+                        android:text="Ticket Details" />
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/criticality"
+                        style="@style/AppTheme.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Priority"
+                        app:errorEnabled="true"
+                        app:startIconDrawable="@drawable/ic_user_name"
+                        app:startIconTint="@color/primary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/criticalityAct"
+                            style="@style/FormField.TextInputEditText"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/title"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="Title"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText style="@style/FormField.TextInputEditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/description"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="Description"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText style="@style/FormField.TextArea" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                style="@style/FormContainer.ListX"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    style="@style/Header.Form"
+                    android:text="Photos"
+                    app:layout_constraintBottom_toBottomOf="@+id/uploadFile"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/uploadFile" />
+
+                <Button
+                    android:id="@+id/uploadFile"
+                    style="@style/Container.Action.Positive.XSmall"
+                    android:text="Select File"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:id="@+id/space01"
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadFile" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ticketFiles"
+                    style="@style/Container.FullWidth"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space01" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

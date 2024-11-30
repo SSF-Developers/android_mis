@@ -1,0 +1,373 @@
+<resources>
+    <string name="app_name">MIS</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="Menu">Menu</string>
+
+    <string name="Rs">\u20B9</string>
+
+    <string name="description_data_request_config">Below listed parameters are collected by all units. Check the parameters that should be included for Data Request</string>
+    <string name="description_light_config">Below listed parameters control the Light operations for the units. The changes made here will take effect for all the units/cabins as per the selections made in the Config-Scope Section.</string>
+    <string name="description_fan_config">Below listed parameters control the Fan operations for the units. The changes made here will take effect for all the units/cabins as per the selections made in the Config-Scope Section.</string>
+    <string name="description_floor_clean_config">Below listed parameters control the Floor Clean operations for the units. The changes made here will take effect for all the units/cabins as per the selections made in the Config-Scope Section.</string>
+    <string name="description_flush_config">Below listed parameters control the Flush operations for the units. The changes made here will take effect for all the units/cabins as per the selections made in the Config-Scope Section.</string>
+    <string name="description_pre_flush_config">Below listed parameters can enable or disable pre-flush operation here. Other parameters for this operation are derived from Full-Flush configurations. The changes made here will take effect for all the units/cabins as per the selections made in the Config-Scope Section.</string>
+    <string name="description_usage_charge_config">Below listed parameters control the Usage Charge and Payment Mode settings for the units. The changes made here will take effect for all the units/cabins as per the selections made in the Config-Scope Section.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="states">States</string>
+    <string name="districts">Districts</string>
+    <string name="cities">Cities</string>
+    <string name="complexes">Complexes</string>
+    <string name="complex">Complex</string>
+    <string name="selection_tree">Selection Tree</string>
+    <string name="select_units_to_view_reports">Select units to view reports</string>
+
+    <string name="disabled">Disabled</string>
+    <string name="memberAccessDefineText">%1$s | %2$s</string>
+    <string name="all">ALL</string>
+    <string name="submit">Submit</string>
+    <string name="scheduleDetails">A schedule that runs at a regular rate, such as every %s Days </string>
+    <string name="reportDetails">This report provides details of all Complexes that were used in the selected time range</string>
+    <string name="chooseAValidDate">Choose a valid date</string>
+    <string name="pleaseSelectADate">Please Select a date</string>
+    <string name="pleaseSelectAtLeastOneOfTheStatus">Please Select at least one of the stats</string>
+    <string name="pleaseEnterAValidRate">Please Enter a valid rate</string>
+    <string name="emailRequired">Email Required</string>
+    <string name="deviceManagement">Device Management</string>
+    <string name="createEnterprise">Create Enterprise</string>
+    <string name="enrollDevice">Enroll device</string>
+    <string name="zero">0</string>
+    <string name="enterpriseName">Enterprise Name</string>
+    <string name="managementMode">Management Mode</string>
+    <string name="enrollmentStatus">Enrollment</string>
+    <string name="awsCommissioningStatus">Aws Status</string>
+    <string name="deviceName">Device Name</string>
+    <string name="siteName">Site Name</string>
+    <string name="clientName">Client Name</string>
+    <string name="cabinType">Cabin Type</string>
+    <string name="siteAddress">Site Address</string>
+    <string name="required">*Required</string>
+    <string name="deviceDetails">Device Details</string>
+    <string name="displayName">Display Name</string>
+    <string name="noEnterpriseFound">No Enterprise Found</string>
+    <string name="noDeviceFound">No Devices Found</string>
+    <string name="add">Add</string>
+    <string name="chooseKiosk">Choose Kiosk</string>
+    <string name="kioskCustomizationEnabled">Kiosk Custom Launcher Enabled</string>
+    <string name="kioskCustomization">Kiosk Customization</string>
+    <string name="unattendedTimerToolTip">
+        Time after which the application will go back to user panel if device is left unattended (No one is using the device).
+    </string>
+    <string name="kioskAppNotSelected">Please select 1 app as kiosk app</string>
+    <string name="appListEmpty">Please add at-least 1 application</string>
+
+    <string-array name="items">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+    </string-array>
+
+    <string-array name="reportDays">
+        <item>"Last 15 days"</item>
+        <item>"Last 30 days"</item>
+        <item>"Last 45 days"</item>
+        <item>"Last 60 days"</item>
+        <item>"Last 75 days"</item>
+        <item>"Last 90 days"</item>
+    </string-array>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+
+    <string name="cabinAttributes">Cabin Attributes</string>
+
+    <string name="cabinName">Cabin Name</string>
+    <string name="userType">User Type</string>
+    <string name="usageChargeType">Usage Charge Type</string>
+    <string name="urinalCount">Urinal Count</string>
+    <string name="bwtCapacity">BWT Capacity</string>
+    <string name="bwtLevel">BWT Level</string>
+    <string name="thingNameSuffix">Thing Name Suffix</string>
+
+    <string name="selectState">Select State</string>
+    <string name="selectDistrict">Select District</string>
+    <string name="selectCity">Select City</string>
+    <string name="complexNameTaken">Complex name taken</string>
+    <string name="tempUUID">HP0501_20122023_000_MWC_001</string>
+    <string name="parent">Haryana</string>
+    <string name="mwc">MWC</string>
+    <string name="selectComplex">Select/Register Complex</string>
+    <string name="registerCabin">Register New Cabin</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="selectPolicy">Select Policy</string>
+    <string name="policyVersion">Version: %d</string>
+    <string name="version">Version: %1$s</string>
+    <string name="policyDetails">Policy Details</string>
+    <string name="createNewPolicy">Create New Policy</string>
+    <string name="policyList">Policy List</string>
+
+    <string name="cameraDisabled">Camera Disabled</string>
+    <string name="addUserDisabled">Add User Disabled</string>
+    <string name="factoryResetDisabled">Factory Reset Disabled</string>
+    <string name="mountPhysicalMediaDisabled">Mount Physical Media Disabled</string>
+    <string name="modifyAccountsDisabled">Modify Accounts Disabled</string>
+    <string name="safeBootDisabled">Safe Boot Disabled</string>
+    <string name="uninstallAppsDisabled">Uninstall Apps Disabled</string>
+    <string name="bluetoothConfigDisabled">Bluetooth Config Disabled</string>
+    <string name="vpnConfigDisabled">VPN Config Disabled</string>
+    <string name="networkResetDisabled">Network Reset Disabled</string>
+    <string name="smsDisabled">Sms Disabled</string>
+    <string name="removeUserDisabled">Remove User Disabled</string>
+    <string name="outgoingCallsDisabled">Outgoing calls Disabled</string>
+    <string name="applicationDetails">Application Details</string>
+    <string name="deviceUnattendedTimer">Device un-attended timer</string>
+    <string name="deviceUnattendedTimerExplanation">The time after which IoT app will launch User Panel, if no-one is using the device.</string>
+    <string name="inMinutes">(in minutes)</string>
+    <string name="appType">Application Type</string>
+    <string name="upiPayment">UPI Payment Status</string>
+    <string name="create_new_complex">Create New Complex</string>
+    <string name="registerNewCabin">Register Cabin</string>
+    <string name="back">Back</string>
+    <string name="chooseOption">Choose Option</string>
+    <string name="language">Language</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="installType">Install Type</string>
+    <string name="packageName">Package Name</string>
+    <string name="applications">Applications</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="city">City</string>
+    <string name="policyName">Policy Name</string>
+    <string name="disabledReason">Disabled Reason</string>
+    <string name="updateDevice">Update Device</string>
+    <string name="updateEnterprise">Update Enterprise</string>
+    <string name="contactInfo">Contact Info</string>
+    <string name="contactEmail">Contact Email</string>
+    <string name="close">Close</string>
+
+    <string name="dataProtectionOfficerName">Data Protection Officer Name</string>
+    <string name="dataProtectionOfficerEmail">Data Protection Officer Email</string>
+    <string name="dataProtectionOfficerPhone">Data Protection Officer Phone</string>
+    <string name="euRepresentativeName">EU Representative Name</string>
+    <string name="euRepresentativeEmail">EU Representative Email</string>
+    <string name="euRepresentativePhone">EU Representative Phone</string>
+
+    <string name="filter">Filter</string>
+    <string-array name="applicationType">
+        <item>Entry Management System</item>
+        <item>Toilet Monitoring System</item>
+        <item>Cabin Automation System without BWT</item>
+        <item>Ambient Monitoring System</item>
+        <item>Black Water Treatment</item>
+        <item>Cabin Automation System with BWT</item>
+    </string-array>
+
+    <string-array name="available_languages">
+        <item>Select Language</item>
+        <item>Assamese</item>
+        <item>Bangla</item>
+        <item>Tibetan</item>
+        <item>Bodo</item>
+        <item>Dogri</item>
+        <item>English</item>
+        <item>Gujarati</item>
+        <item>Hindi</item>
+        <item>Kannada</item>
+        <item>Konkani</item>
+        <item>Kashmiri</item>
+        <item>Maithili</item>
+        <item>Malayalam</item>
+        <item>Manipuri</item>
+        <item>Marathi</item>
+        <item>Nepali</item>
+        <item>Odia</item>
+        <item>Punjabi</item>
+        <item>Sanskrit</item>
+        <item>Santali</item>
+        <item>Sindhi</item>
+        <item>Sindhi Devanagari</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Urdu</item>
+    </string-array>
+
+    <string name="marginTop">Margin Top</string>
+    <string name="marginBottom">Margin Bottom</string>
+    <string name="marginLeft">Margin Left</string>
+    <string name="marginRight">Margin Right</string>
+    <string name="toBeImplemented">To be implemented</string>
+    <string name="power_button_action">Power Button Action</string>
+    <string name="power_button_action_">Power Button Action:</string>
+    <string name="system_error_warning">System Error Warning</string>
+    <string name="system_error_warning_">System Error Warning:</string>
+    <string name="system_navigation">System Navigation</string>
+    <string name="system_navigation_">System Navigation:</string>
+    <string name="status_bar">Status Bar</string>
+    <string name="status_bar_">Status Bar:</string>
+    <string name="device_settings">Device Settings</string>
+    <string name="device_settings_">Device Settings:</string>
+    <string name="defaultPermissionPolicy">Default Permission Policy</string>
+    <string name="autoUpdateMode">Auto Update Mode</string>
+    <string name="userControlSettings">User Control Settings</string>
+    <string name="noPoliciesFound">No Policies Found</string>
+    <string name="complexDetails">Complex Details</string>
+    <string name="update">Update</string>
+    <string name="enrollment_qr">Enrollment Qr</string>
+    <string name="share">Share</string>
+    <string name="email">Email</string>
+    <string name="isAmsEnabled">Ams Enabled</string>
+    <string name="delete">Delete</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifiPolicyType">Wi-Fi Policy Type</string>
+    <string name="wifiName">Wi-Fi Name</string>
+    <string name="wifiRequired">Please add atleast 1 Wi-Fi</string>
+
+
+    <string-array name="applicationInstallType">
+        <item>INSTALL_TYPE_UNSPECIFIED</item>
+        <item>PREINSTALLED</item>
+        <item>FORCE_INSTALLED</item>
+        <item>BLOCKED</item>
+        <item>AVAILABLE</item>
+        <item>REQUIRED_FOR_SETUP</item>
+        <!--        <item>KIOSK</item>-->
+    </string-array>
+
+
+    <string-array name="autoUpdateMode">
+        <item>AUTO_UPDATE_MODE_UNSPECIFIED</item>
+        <item>AUTO_UPDATE_DEFAULT</item>
+        <item>AUTO_UPDATE_POSTPONED</item>
+        <item>AUTO_UPDATE_HIGH_PRIORITY</item>
+    </string-array>
+
+
+    <string-array name="defaultPermissionPolicy">
+        <item>PERMISSION_POLICY_UNSPECIFIED</item>
+        <item>PROMPT</item>
+        <item>GRANT</item>
+        <item>DENY</item>
+    </string-array>
+
+
+    <string-array name="userControlSettings">
+        <item>USER_CONTROL_SETTINGS_UNSPECIFIED</item>
+        <item>USER_CONTROL_ALLOWED</item>
+        <item>USER_CONTROL_DISALLOWED</item>
+    </string-array>
+
+
+    <string-array name="powerButtonAction">
+        <item>POWER_BUTTON_ACTIONS_UNSPECIFIED</item>
+        <item>POWER_BUTTON_AVAILABLE</item>
+        <item>POWER_BUTTON_BLOCKED</item>
+    </string-array>
+
+    <string-array name="SystemErrorWarnings">
+        <item>SYSTEM_ERROR_WARNINGS_UNSPECIFIED</item>
+        <item>ERROR_AND_WARNINGS_ENABLED</item>
+        <item>ERROR_AND_WARNINGS_MUTED</item>
+    </string-array>
+
+    <string-array name="SystemNavigation">
+        <item>SYSTEM_NAVIGATION_UNSPECIFIED</item>
+        <item>NAVIGATION_ENABLED</item>
+        <item>NAVIGATION_DISABLED</item>
+        <item>HOME_BUTTON_ONLY</item>
+    </string-array>
+
+
+    <string-array name="StatusBar">
+        <item>STATUS_BAR_UNSPECIFIED</item>
+        <item>NOTIFICATIONS_AND_SYSTEM_INFO_ENABLED</item>
+        <item>NOTIFICATIONS_AND_SYSTEM_INFO_DISABLED</item>
+        <item>SYSTEM_INFO_ONLY</item>
+    </string-array>
+
+
+    <string-array name="DeviceSettings">
+        <item>DEVICE_SETTINGS_UNSPECIFIED</item>
+        <item>SETTINGS_ACCESS_ALLOWED</item>
+        <item>SETTINGS_ACCESS_BLOCKED</item>
+    </string-array>
+
+    <string-array name="deviceState">
+        <item>DEVICE_STATE_UNSPECIFIED</item>
+        <item>ACTIVE</item>
+        <item>DISABLED</item>
+        <item>DELETED</item>
+        <item>PROVISIONING</item>
+        <item>LOST</item>
+        <item>PREPARING_FOR_MIGRATION</item>
+        <item>DEACTIVATED_BY_DEVICE_FINANCE</item>
+    </string-array>
+
+    <string-array name="wifiSsidPolicyType">
+        <item>WIFI_SSID_POLICY_TYPE_UNSPECIFIED</item>
+        <item>WIFI_SSID_DENYLIST</item>
+        <item>WIFI_SSID_ALLOWLIST</item>
+    </string-array>
+
+    <string-array name="filterDevicesView">
+        <item>List View</item>
+        <item>Complex View</item>
+    </string-array>
+
+</resources>

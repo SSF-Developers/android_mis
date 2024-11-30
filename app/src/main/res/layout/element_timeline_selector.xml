@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timeIntervalContainer"
+    style="@style/Container.WrapContent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/durationLabel"
+        style="@style/Label.Card"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/timeInterval"
+        style="@style/Label.Spinner"
+        android:background="@color/white" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/vic_drop_down" />
+
+</LinearLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Cards.QuickAccess">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_details"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/Header.Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:text="Quick Access"
+        app:layout_constraintBottom_toBottomOf="@+id/statusIconCont"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/statusIconCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_small"
+        android:background="@drawable/surface_circle_white"
+        android:elevation="4dp"
+        android:padding="2dp"
+        app:layout_constraintRight_toLeftOf="@+id/label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".4">
+
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_quick_access_active" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/Label.Card.ERR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:text="2 Faulty units detected"
+        app:layout_constraintBottom_toBottomOf="@+id/statusIconCont"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/statusIconCont" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/complexGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusIconCont" />
+
+
+    <include
+        android:id="@+id/banner"
+        layout="@layout/banner_quick_access"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusIconCont" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

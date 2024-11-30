@@ -1,0 +1,4471 @@
+{
+  "dashboardChartData": {
+    "usage": [
+      {
+        "date": "02/03/2023",
+        "dateIndex": "20230302",
+        "all": 173,
+        "mwc": 91,
+        "fwc": 68,
+        "pwc": 2,
+        "mur": 12
+      },
+      {
+        "date": "01/03/2023",
+        "dateIndex": "20230301",
+        "all": 174,
+        "mwc": 100,
+        "fwc": 13,
+        "pwc": 6,
+        "mur": 55
+      },
+      {
+        "date": "28/02/2023",
+        "dateIndex": "20230228",
+        "all": 149,
+        "mwc": 21,
+        "fwc": 79,
+        "pwc": 2,
+        "mur": 47
+      },
+      {
+        "date": "27/02/2023",
+        "dateIndex": "20230227",
+        "all": 89,
+        "mwc": 28,
+        "fwc": 10,
+        "pwc": 1,
+        "mur": 50
+      },
+      {
+        "date": "26/02/2023",
+        "dateIndex": "20230226",
+        "all": 55,
+        "mwc": 10,
+        "fwc": 3,
+        "pwc": 8,
+        "mur": 34
+      },
+      {
+        "date": "25/02/2023",
+        "dateIndex": "20230225",
+        "all": 114,
+        "mwc": 23,
+        "fwc": 20,
+        "pwc": 12,
+        "mur": 59
+      },
+      {
+        "date": "24/02/2023",
+        "dateIndex": "20230224",
+        "all": 200,
+        "mwc": 79,
+        "fwc": 59,
+        "pwc": 18,
+        "mur": 44
+      },
+      {
+        "date": "23/02/2023",
+        "dateIndex": "20230223",
+        "all": 296,
+        "mwc": 8,
+        "fwc": 55,
+        "pwc": 0,
+        "mur": 233
+      },
+      {
+        "date": "22/02/2023",
+        "dateIndex": "20230222",
+        "all": 89,
+        "mwc": 14,
+        "fwc": 45,
+        "pwc": 4,
+        "mur": 26
+      },
+      {
+        "date": "21/02/2023",
+        "dateIndex": "20230221",
+        "all": 243,
+        "mwc": 98,
+        "fwc": 81,
+        "pwc": 2,
+        "mur": 62
+      },
+      {
+        "date": "20/02/2023",
+        "dateIndex": "20230220",
+        "all": 215,
+        "mwc": 159,
+        "fwc": 0,
+        "pwc": 4,
+        "mur": 52
+      },
+      {
+        "date": "19/02/2023",
+        "dateIndex": "20230219",
+        "all": 84,
+        "mwc": 19,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 65
+      },
+      {
+        "date": "18/02/2023",
+        "dateIndex": "20230218",
+        "all": 490,
+        "mwc": 18,
+        "fwc": 3,
+        "pwc": 0,
+        "mur": 469
+      },
+      {
+        "date": "17/02/2023",
+        "dateIndex": "20230217",
+        "all": 159,
+        "mwc": 100,
+        "fwc": 36,
+        "pwc": 0,
+        "mur": 23
+      },
+      {
+        "date": "16/02/2023",
+        "dateIndex": "20230216",
+        "all": 107,
+        "mwc": 27,
+        "fwc": 41,
+        "pwc": 4,
+        "mur": 35
+      },
+      {
+        "date": "15/02/2023",
+        "dateIndex": "20230215",
+        "all": 244,
+        "mwc": 96,
+        "fwc": 102,
+        "pwc": 16,
+        "mur": 30
+      },
+      {
+        "date": "14/02/2023",
+        "dateIndex": "20230214",
+        "all": 229,
+        "mwc": 118,
+        "fwc": 86,
+        "pwc": 15,
+        "mur": 10
+      },
+      {
+        "date": "13/02/2023",
+        "dateIndex": "20230213",
+        "all": 337,
+        "mwc": 286,
+        "fwc": 44,
+        "pwc": 7,
+        "mur": 0
+      },
+      {
+        "date": "12/02/2023",
+        "dateIndex": "20230212",
+        "all": 322,
+        "mwc": 158,
+        "fwc": 16,
+        "pwc": 133,
+        "mur": 15
+      },
+      {
+        "date": "11/02/2023",
+        "dateIndex": "20230211",
+        "all": 188,
+        "mwc": 118,
+        "fwc": 27,
+        "pwc": 11,
+        "mur": 32
+      },
+      {
+        "date": "10/02/2023",
+        "dateIndex": "20230210",
+        "all": 312,
+        "mwc": 108,
+        "fwc": 122,
+        "pwc": 35,
+        "mur": 47
+      },
+      {
+        "date": "09/02/2023",
+        "dateIndex": "20230209",
+        "all": 617,
+        "mwc": 302,
+        "fwc": 151,
+        "pwc": 91,
+        "mur": 73
+      },
+      {
+        "date": "08/02/2023",
+        "dateIndex": "20230208",
+        "all": 341,
+        "mwc": 61,
+        "fwc": 107,
+        "pwc": 93,
+        "mur": 80
+      },
+      {
+        "date": "07/02/2023",
+        "dateIndex": "20230207",
+        "all": 179,
+        "mwc": 43,
+        "fwc": 5,
+        "pwc": 60,
+        "mur": 71
+      },
+      {
+        "date": "06/02/2023",
+        "dateIndex": "20230206",
+        "all": 191,
+        "mwc": 35,
+        "fwc": 85,
+        "pwc": 0,
+        "mur": 71
+      },
+      {
+        "date": "05/02/2023",
+        "dateIndex": "20230205",
+        "all": 70,
+        "mwc": 0,
+        "fwc": 40,
+        "pwc": 0,
+        "mur": 30
+      },
+      {
+        "date": "04/02/2023",
+        "dateIndex": "20230204",
+        "all": 497,
+        "mwc": 216,
+        "fwc": 278,
+        "pwc": 0,
+        "mur": 3
+      },
+      {
+        "date": "03/02/2023",
+        "dateIndex": "20230203",
+        "all": 172,
+        "mwc": 0,
+        "fwc": 170,
+        "pwc": 0,
+        "mur": 2
+      },
+      {
+        "date": "02/02/2023",
+        "dateIndex": "20230202",
+        "all": 36,
+        "mwc": 0,
+        "fwc": 36,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "01/02/2023",
+        "dateIndex": "20230201",
+        "all": 21,
+        "mwc": 0,
+        "fwc": 18,
+        "pwc": 3,
+        "mur": 0
+      },
+      {
+        "date": "31/01/2023",
+        "dateIndex": "20230131",
+        "all": 37,
+        "mwc": 1,
+        "fwc": 36,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "30/01/2023",
+        "dateIndex": "20230130",
+        "all": 56,
+        "mwc": 9,
+        "fwc": 24,
+        "pwc": 10,
+        "mur": 13
+      },
+      {
+        "date": "29/01/2023",
+        "dateIndex": "20230129",
+        "all": 45,
+        "mwc": 6,
+        "fwc": 1,
+        "pwc": 16,
+        "mur": 22
+      },
+      {
+        "date": "28/01/2023",
+        "dateIndex": "20230128",
+        "all": 266,
+        "mwc": 11,
+        "fwc": 101,
+        "pwc": 5,
+        "mur": 149
+      },
+      {
+        "date": "27/01/2023",
+        "dateIndex": "20230127",
+        "all": 218,
+        "mwc": 17,
+        "fwc": 6,
+        "pwc": 5,
+        "mur": 190
+      },
+      {
+        "date": "26/01/2023",
+        "dateIndex": "20230126",
+        "all": 13,
+        "mwc": 3,
+        "fwc": 6,
+        "pwc": 4,
+        "mur": 0
+      },
+      {
+        "date": "25/01/2023",
+        "dateIndex": "20230125",
+        "all": 33,
+        "mwc": 13,
+        "fwc": 10,
+        "pwc": 10,
+        "mur": 0
+      },
+      {
+        "date": "24/01/2023",
+        "dateIndex": "20230124",
+        "all": 75,
+        "mwc": 11,
+        "fwc": 8,
+        "pwc": 16,
+        "mur": 40
+      },
+      {
+        "date": "23/01/2023",
+        "dateIndex": "20230123",
+        "all": 272,
+        "mwc": 95,
+        "fwc": 54,
+        "pwc": 23,
+        "mur": 100
+      },
+      {
+        "date": "22/01/2023",
+        "dateIndex": "20230122",
+        "all": 115,
+        "mwc": 12,
+        "fwc": 16,
+        "pwc": 20,
+        "mur": 67
+      },
+      {
+        "date": "21/01/2023",
+        "dateIndex": "20230121",
+        "all": 109,
+        "mwc": 12,
+        "fwc": 81,
+        "pwc": 13,
+        "mur": 3
+      },
+      {
+        "date": "20/01/2023",
+        "dateIndex": "20230120",
+        "all": 135,
+        "mwc": 10,
+        "fwc": 54,
+        "pwc": 60,
+        "mur": 11
+      },
+      {
+        "date": "19/01/2023",
+        "dateIndex": "20230119",
+        "all": 105,
+        "mwc": 12,
+        "fwc": 86,
+        "pwc": 7,
+        "mur": 0
+      },
+      {
+        "date": "18/01/2023",
+        "dateIndex": "20230118",
+        "all": 214,
+        "mwc": 35,
+        "fwc": 55,
+        "pwc": 83,
+        "mur": 41
+      },
+      {
+        "date": "17/01/2023",
+        "dateIndex": "20230117",
+        "all": 292,
+        "mwc": 109,
+        "fwc": 6,
+        "pwc": 107,
+        "mur": 70
+      }
+    ],
+    "feedback": [
+      {
+        "date": "02/03/2023",
+        "dateIndex": "20230302",
+        "all": "4.6",
+        "mwc": "4.7",
+        "fwc": "4.5",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "01/03/2023",
+        "dateIndex": "20230301",
+        "all": "4.6",
+        "mwc": "4.7",
+        "fwc": "4.5",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "28/02/2023",
+        "dateIndex": "20230228",
+        "all": "4.6",
+        "mwc": "4.7",
+        "fwc": "4.5",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "27/02/2023",
+        "dateIndex": "20230227",
+        "all": "4.6",
+        "mwc": "4.7",
+        "fwc": "4.5",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "26/02/2023",
+        "dateIndex": "20230226",
+        "all": "4.6",
+        "mwc": "4.7",
+        "fwc": "4.5",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "25/02/2023",
+        "dateIndex": "20230225",
+        "all": "4.6",
+        "mwc": "4.7",
+        "fwc": "4.5",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "24/02/2023",
+        "dateIndex": "20230224",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "23/02/2023",
+        "dateIndex": "20230223",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "22/02/2023",
+        "dateIndex": "20230222",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "21/02/2023",
+        "dateIndex": "20230221",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "20/02/2023",
+        "dateIndex": "20230220",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.6",
+        "mur": "5.0"
+      },
+      {
+        "date": "19/02/2023",
+        "dateIndex": "20230219",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "18/02/2023",
+        "dateIndex": "20230218",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "17/02/2023",
+        "dateIndex": "20230217",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "16/02/2023",
+        "dateIndex": "20230216",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "15/02/2023",
+        "dateIndex": "20230215",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.7",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "14/02/2023",
+        "dateIndex": "20230214",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "13/02/2023",
+        "dateIndex": "20230213",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "12/02/2023",
+        "dateIndex": "20230212",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "11/02/2023",
+        "dateIndex": "20230211",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "10/02/2023",
+        "dateIndex": "20230210",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "09/02/2023",
+        "dateIndex": "20230209",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "08/02/2023",
+        "dateIndex": "20230208",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "07/02/2023",
+        "dateIndex": "20230207",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "06/02/2023",
+        "dateIndex": "20230206",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "05/02/2023",
+        "dateIndex": "20230205",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "04/02/2023",
+        "dateIndex": "20230204",
+        "all": "4.7",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "03/02/2023",
+        "dateIndex": "20230203",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "02/02/2023",
+        "dateIndex": "20230202",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "01/02/2023",
+        "dateIndex": "20230201",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "31/01/2023",
+        "dateIndex": "20230131",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "30/01/2023",
+        "dateIndex": "20230130",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "29/01/2023",
+        "dateIndex": "20230129",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "28/01/2023",
+        "dateIndex": "20230128",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.8",
+        "mur": "5.0"
+      },
+      {
+        "date": "27/01/2023",
+        "dateIndex": "20230127",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.7",
+        "mur": "5.0"
+      },
+      {
+        "date": "26/01/2023",
+        "dateIndex": "20230126",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "25/01/2023",
+        "dateIndex": "20230125",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "24/01/2023",
+        "dateIndex": "20230124",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "23/01/2023",
+        "dateIndex": "20230123",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "22/01/2023",
+        "dateIndex": "20230122",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "21/01/2023",
+        "dateIndex": "20230121",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "20/01/2023",
+        "dateIndex": "20230120",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.8",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "19/01/2023",
+        "dateIndex": "20230119",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.9",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "18/01/2023",
+        "dateIndex": "20230118",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.9",
+        "pwc": "4.9",
+        "mur": "5.0"
+      },
+      {
+        "date": "17/01/2023",
+        "dateIndex": "20230117",
+        "all": "4.8",
+        "mwc": "4.7",
+        "fwc": "4.9",
+        "pwc": "4.9",
+        "mur": "5.0"
+      }
+    ],
+    "collection": [
+      {
+        "date": "02/03/2023",
+        "dateIndex": "20230302",
+        "all": 182,
+        "mwc": 182,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "01/03/2023",
+        "dateIndex": "20230301",
+        "all": 208,
+        "mwc": 196,
+        "fwc": 0,
+        "pwc": 12,
+        "mur": 0
+      },
+      {
+        "date": "28/02/2023",
+        "dateIndex": "20230228",
+        "all": 462,
+        "mwc": 30,
+        "fwc": 427,
+        "pwc": 5,
+        "mur": 0
+      },
+      {
+        "date": "27/02/2023",
+        "dateIndex": "20230227",
+        "all": 25,
+        "mwc": 25,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "26/02/2023",
+        "dateIndex": "20230226",
+        "all": 15,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 15,
+        "mur": 0
+      },
+      {
+        "date": "25/02/2023",
+        "dateIndex": "20230225",
+        "all": 35,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 35,
+        "mur": 0
+      },
+      {
+        "date": "24/02/2023",
+        "dateIndex": "20230224",
+        "all": 59,
+        "mwc": 39,
+        "fwc": 15,
+        "pwc": 5,
+        "mur": 0
+      },
+      {
+        "date": "23/02/2023",
+        "dateIndex": "20230223",
+        "all": 327,
+        "mwc": 30,
+        "fwc": 297,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "22/02/2023",
+        "dateIndex": "20230222",
+        "all": 195,
+        "mwc": 52,
+        "fwc": 136,
+        "pwc": 7,
+        "mur": 0
+      },
+      {
+        "date": "21/02/2023",
+        "dateIndex": "20230221",
+        "all": 512,
+        "mwc": 220,
+        "fwc": 287,
+        "pwc": 5,
+        "mur": 0
+      },
+      {
+        "date": "20/02/2023",
+        "dateIndex": "20230220",
+        "all": 385,
+        "mwc": 380,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 5
+      },
+      {
+        "date": "19/02/2023",
+        "dateIndex": "20230219",
+        "all": 60,
+        "mwc": 60,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "18/02/2023",
+        "dateIndex": "20230218",
+        "all": 15,
+        "mwc": 15,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "17/02/2023",
+        "dateIndex": "20230217",
+        "all": 243,
+        "mwc": 218,
+        "fwc": 20,
+        "pwc": 0,
+        "mur": 5
+      },
+      {
+        "date": "16/02/2023",
+        "dateIndex": "20230216",
+        "all": 166,
+        "mwc": 30,
+        "fwc": 116,
+        "pwc": 5,
+        "mur": 15
+      },
+      {
+        "date": "15/02/2023",
+        "dateIndex": "20230215",
+        "all": 502,
+        "mwc": 171,
+        "fwc": 301,
+        "pwc": 30,
+        "mur": 0
+      },
+      {
+        "date": "14/02/2023",
+        "dateIndex": "20230214",
+        "all": 430,
+        "mwc": 177,
+        "fwc": 238,
+        "pwc": 5,
+        "mur": 10
+      },
+      {
+        "date": "13/02/2023",
+        "dateIndex": "20230213",
+        "all": 833,
+        "mwc": 613,
+        "fwc": 205,
+        "pwc": 15,
+        "mur": 0
+      },
+      {
+        "date": "12/02/2023",
+        "dateIndex": "20230212",
+        "all": 882,
+        "mwc": 631,
+        "fwc": 0,
+        "pwc": 246,
+        "mur": 5
+      },
+      {
+        "date": "11/02/2023",
+        "dateIndex": "20230211",
+        "all": 610,
+        "mwc": 478,
+        "fwc": 110,
+        "pwc": 12,
+        "mur": 10
+      },
+      {
+        "date": "10/02/2023",
+        "dateIndex": "20230210",
+        "all": 814,
+        "mwc": 481,
+        "fwc": 269,
+        "pwc": 64,
+        "mur": 0
+      },
+      {
+        "date": "09/02/2023",
+        "dateIndex": "20230209",
+        "all": 717,
+        "mwc": 509,
+        "fwc": 25,
+        "pwc": 183,
+        "mur": 0
+      },
+      {
+        "date": "08/02/2023",
+        "dateIndex": "20230208",
+        "all": 487,
+        "mwc": 257,
+        "fwc": 0,
+        "pwc": 230,
+        "mur": 0
+      },
+      {
+        "date": "07/02/2023",
+        "dateIndex": "20230207",
+        "all": 322,
+        "mwc": 160,
+        "fwc": 0,
+        "pwc": 162,
+        "mur": 0
+      },
+      {
+        "date": "06/02/2023",
+        "dateIndex": "20230206",
+        "all": 216,
+        "mwc": 131,
+        "fwc": 85,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "05/02/2023",
+        "dateIndex": "20230205",
+        "all": 5,
+        "mwc": 0,
+        "fwc": 5,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "04/02/2023",
+        "dateIndex": "20230204",
+        "all": 39,
+        "mwc": 0,
+        "fwc": 39,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "03/02/2023",
+        "dateIndex": "20230203",
+        "all": 327,
+        "mwc": 0,
+        "fwc": 327,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "02/02/2023",
+        "dateIndex": "20230202",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "01/02/2023",
+        "dateIndex": "20230201",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "31/01/2023",
+        "dateIndex": "20230131",
+        "all": 67,
+        "mwc": 0,
+        "fwc": 67,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "30/01/2023",
+        "dateIndex": "20230130",
+        "all": 25,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 15,
+        "mur": 10
+      },
+      {
+        "date": "29/01/2023",
+        "dateIndex": "20230129",
+        "all": 57,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 45,
+        "mur": 12
+      },
+      {
+        "date": "28/01/2023",
+        "dateIndex": "20230128",
+        "all": 468,
+        "mwc": 0,
+        "fwc": 82,
+        "pwc": 5,
+        "mur": 381
+      },
+      {
+        "date": "27/01/2023",
+        "dateIndex": "20230127",
+        "all": 352,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 352
+      },
+      {
+        "date": "26/01/2023",
+        "dateIndex": "20230126",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "25/01/2023",
+        "dateIndex": "20230125",
+        "all": 5,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 5,
+        "mur": 0
+      },
+      {
+        "date": "24/01/2023",
+        "dateIndex": "20230124",
+        "all": 122,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 30,
+        "mur": 92
+      },
+      {
+        "date": "23/01/2023",
+        "dateIndex": "20230123",
+        "all": 416,
+        "mwc": 0,
+        "fwc": 170,
+        "pwc": 50,
+        "mur": 196
+      },
+      {
+        "date": "22/01/2023",
+        "dateIndex": "20230122",
+        "all": 177,
+        "mwc": 0,
+        "fwc": 1,
+        "pwc": 35,
+        "mur": 141
+      },
+      {
+        "date": "21/01/2023",
+        "dateIndex": "20230121",
+        "all": 88,
+        "mwc": 0,
+        "fwc": 51,
+        "pwc": 37,
+        "mur": 0
+      },
+      {
+        "date": "20/01/2023",
+        "dateIndex": "20230120",
+        "all": 126,
+        "mwc": 0,
+        "fwc": 6,
+        "pwc": 120,
+        "mur": 0
+      },
+      {
+        "date": "19/01/2023",
+        "dateIndex": "20230119",
+        "all": 20,
+        "mwc": 0,
+        "fwc": 5,
+        "pwc": 15,
+        "mur": 0
+      },
+      {
+        "date": "18/01/2023",
+        "dateIndex": "20230118",
+        "all": 241,
+        "mwc": 0,
+        "fwc": 111,
+        "pwc": 130,
+        "mur": 0
+      },
+      {
+        "date": "17/01/2023",
+        "dateIndex": "20230117",
+        "all": 132,
+        "mwc": 15,
+        "fwc": 0,
+        "pwc": 112,
+        "mur": 5
+      }
+    ],
+    "upiCollection": [
+      {
+        "date": "02/03/2023",
+        "dateIndex": "20230302",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "01/03/2023",
+        "dateIndex": "20230301",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "28/02/2023",
+        "dateIndex": "20230228",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "27/02/2023",
+        "dateIndex": "20230227",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "26/02/2023",
+        "dateIndex": "20230226",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "25/02/2023",
+        "dateIndex": "20230225",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "24/02/2023",
+        "dateIndex": "20230224",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "23/02/2023",
+        "dateIndex": "20230223",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "22/02/2023",
+        "dateIndex": "20230222",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "21/02/2023",
+        "dateIndex": "20230221",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "20/02/2023",
+        "dateIndex": "20230220",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "19/02/2023",
+        "dateIndex": "20230219",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "18/02/2023",
+        "dateIndex": "20230218",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "17/02/2023",
+        "dateIndex": "20230217",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "16/02/2023",
+        "dateIndex": "20230216",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "15/02/2023",
+        "dateIndex": "20230215",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "14/02/2023",
+        "dateIndex": "20230214",
+        "all": 8,
+        "mwc": 8,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "13/02/2023",
+        "dateIndex": "20230213",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "12/02/2023",
+        "dateIndex": "20230212",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "11/02/2023",
+        "dateIndex": "20230211",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "10/02/2023",
+        "dateIndex": "20230210",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "09/02/2023",
+        "dateIndex": "20230209",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "08/02/2023",
+        "dateIndex": "20230208",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "07/02/2023",
+        "dateIndex": "20230207",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "06/02/2023",
+        "dateIndex": "20230206",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "05/02/2023",
+        "dateIndex": "20230205",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "04/02/2023",
+        "dateIndex": "20230204",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "03/02/2023",
+        "dateIndex": "20230203",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "02/02/2023",
+        "dateIndex": "20230202",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "01/02/2023",
+        "dateIndex": "20230201",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "31/01/2023",
+        "dateIndex": "20230131",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "30/01/2023",
+        "dateIndex": "20230130",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "29/01/2023",
+        "dateIndex": "20230129",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "28/01/2023",
+        "dateIndex": "20230128",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "27/01/2023",
+        "dateIndex": "20230127",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "26/01/2023",
+        "dateIndex": "20230126",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "25/01/2023",
+        "dateIndex": "20230125",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "24/01/2023",
+        "dateIndex": "20230124",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "23/01/2023",
+        "dateIndex": "20230123",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "22/01/2023",
+        "dateIndex": "20230122",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "21/01/2023",
+        "dateIndex": "20230121",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "20/01/2023",
+        "dateIndex": "20230120",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "19/01/2023",
+        "dateIndex": "20230119",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "18/01/2023",
+        "dateIndex": "20230118",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      },
+      {
+        "date": "17/01/2023",
+        "dateIndex": "20230117",
+        "all": 0,
+        "mwc": 0,
+        "fwc": 0,
+        "pwc": 0,
+        "mur": 0
+      }
+    ]
+  },
+  "pieChartData": {
+    "usage": [
+      {
+        "name": "MWC",
+        "value": 2692
+      },
+      {
+        "name": "FWC",
+        "value": 2344
+      },
+      {
+        "name": "PWC",
+        "value": 906
+      },
+      {
+        "name": "MUR",
+        "value": 2436
+      }
+    ],
+    "collection": [
+      {
+        "name": "MWC",
+        "value": 5100
+      },
+      {
+        "name": "FWC",
+        "value": 3395
+      },
+      {
+        "name": "PWC",
+        "value": 1635
+      },
+      {
+        "name": "MUR",
+        "value": 1239
+      }
+    ],
+    "upiCollection": [
+      {
+        "name": "MWC",
+        "value": 8
+      },
+      {
+        "name": "FWC",
+        "value": 0
+      },
+      {
+        "name": "PWC",
+        "value": 0
+      },
+      {
+        "name": "MUR",
+        "value": 0
+      }
+    ],
+    "feedback": [
+      {
+        "name": "MWC",
+        "value": 4.7
+      },
+      {
+        "name": "FWC",
+        "value": 4.7
+      },
+      {
+        "name": "PWC",
+        "value": 4.7
+      },
+      {
+        "name": "MUR",
+        "value": 5
+      }
+    ]
+  },
+  "dataSummary": {
+    "upiCollection": 8,
+    "usage": 8378,
+    "collection": 11369,
+    "feedback": "4.7"
+  },
+  "faultyComplexes": [
+    {
+      "complex": {
+        "name": "TOWNHALL_MSCL",
+        "address": "Budh_bazaar_road,_townhall,_moradabad,_244001",
+        "uuid": "UP5306_23052022_000",
+        "coco": "False",
+        "lat": "28.8363470",
+        "lon": "78.7743100",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "dateIndex": "TOWNHALL_MSCL",
+      "date": "LL_MSCL/HA/TOWN"
+    },
+    {
+      "complex": {
+        "name": "SCADA_CONTROL_MSCL",
+        "address": "Shankar_vijay_colony,_civil_lines,_moradabad,_UP,_244001",
+        "uuid": "UP5306_14012022_002",
+        "coco": "True",
+        "lat": "28.851589",
+        "lon": "78.771423",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "SCADA_CONTROL_MSCL",
+      "date": "CONTROL_/A_/SCAD"
+    },
+    {
+      "complex": {
+        "name": "POLICE_LINE_MSCL",
+        "address": "Civil_lines,_Moradabad,_244001",
+        "uuid": "UP5306_23052022_003",
+        "coco": "True",
+        "lat": "28.853349",
+        "lon": "78.770478",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "POLICE_LINE_MSCL",
+      "date": "_LINE_MS/CE/POLI"
+    },
+    {
+      "complex": {
+        "name": "MADHUBANI_COLONY_MSCL",
+        "address": "Madhubani_colony,_kanth_road_moradabad_244001",
+        "uuid": "UP5306_19042022_001",
+        "coco": "True",
+        "lat": "28.864368",
+        "lon": "78.749453",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "MADHUBANI_COLONY_MSCL",
+      "date": "ANI_COLO/UB/MADH"
+    },
+    {
+      "complex": {
+        "name": "GURHATTI_CHAURAHA_MSCL",
+        "address": "Gurhatt_chauraha_moradabad",
+        "uuid": "UP5306_19042022_000",
+        "coco": "True",
+        "lat": "28.841316",
+        "lon": "78.771293",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "GURHATTI_CHAURAHA_MSCL",
+      "date": "TI_CHAUR/AT/GURH"
+    },
+    {
+      "complex": {
+        "name": "DELHI_BUS_STAND",
+        "address": "Gandhi_Nagar,_delhi_bus_stand,_Moradabad_244001",
+        "uuid": "UP5306_23052022_005",
+        "coco": "True",
+        "lat": "28.827785",
+        "lon": "78.771553",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "DELHI_BUS_STAND",
+      "date": "BUS_STAN/I_/DELH"
+    },
+    {
+      "complex": {
+        "name": "DC_OFFICE_MSCL",
+        "address": "Dc_office,_civil_lines,_moradabad_244001",
+        "uuid": "UP5306_19042022_003",
+        "coco": "False",
+        "lat": "28.84465",
+        "lon": "78.769106",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "DC_OFFICE_MSCL",
+      "date": "ICE_MSCL/FF/DC_O"
+    },
+    {
+      "complex": {
+        "name": "CAMP_OFFICE_MSCL",
+        "address": "Camp_Office,_civil_line,_Moradabad,_244001",
+        "uuid": "UP5306_28092022_000",
+        "coco": "True",
+        "lat": "28.8445700",
+        "lon": "78.7662710",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "CAMP_OFFICE_MSCL",
+      "date": "FFICE_MS/_O/CAMP"
+    },
+    {
+      "complex": {
+        "name": "GSCDCL_H_COURT",
+        "address": "New_High_Ct_Rd,City_Center_,Sharda_Vihar,Gwalior,MP,_pin_-_474002",
+        "uuid": "MP1404_03112020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "GSCDCL_H_COURT",
+      "date": "_H_COURT/CL/GSCD"
+    },
+    {
+      "complex": {
+        "name": "UPI_TEST",
+        "address": "Mandi_upi_test",
+        "uuid": "HP0501_21122022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "DEV_TEST",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "UPI_TEST",
+      "date": "ST/TE/UPI_"
+    },
+    {
+      "complex": {
+        "name": "TEST_PREMISE",
+        "address": "Test_premise",
+        "uuid": "HP0501_08072022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "DEV_TEST",
+        "isSelected": false
+      },
+      "count": 1,
+      "dateIndex": "TEST_PREMISE",
+      "date": "REMISE/_P/TEST"
+    },
+    {
+      "complex": {
+        "name": "TEST_AWS",
+        "address": "Test_aws",
+        "uuid": "HP0501_03092021_000",
+        "coco": "False",
+        "lat": "28.46338333333334",
+        "lon": "77.05105166666667",
+        "client": "DEV_TEST",
+        "isSelected": false
+      },
+      "count": 2,
+      "dateIndex": "TEST_AWS",
+      "date": "WS/_A/TEST"
+    }
+  ],
+  "connectionStatus": [
+    {
+      "complex": {
+        "name": "SIDBALI_FUELS",
+        "address": "Shakarpur,nh24,hapur",
+        "uuid": "UP7002_28092020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP7002_28092020_000_FWC_001",
+          "timestamp": 1601333552899,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP7002_28092020_000_MWC_001",
+          "timestamp": 1623266808926,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SIDBALI_FUELS",
+      "date": "I_FUELS/AL/SIDB"
+    },
+    {
+      "complex": {
+        "name": "LAXMI_FILLING_STATION",
+        "address": "Vill_nizampur,nh_24",
+        "uuid": "UP7001_28092020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "UP7001_28092020_000_MWC_001",
+          "timestamp": 1644823922826,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "UP7001_28092020_000_FWC_001",
+          "timestamp": 1646982371985,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "LAXMI_FILLING_STATION",
+      "date": "FILLING_/I_/LAXM"
+    },
+    {
+      "complex": {
+        "name": "TOWNHALL_MSCL",
+        "address": "Budh_bazaar_road,_townhall,_moradabad,_244001",
+        "uuid": "UP5306_23052022_000",
+        "coco": "False",
+        "lat": "28.8363470",
+        "lon": "78.7743100",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677687435972,
+          "ttl": 1678119435,
+          "THING_NAME": "UP5306_23052022_000_FWC_002",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677756679546,
+          "ttl": 1678188679,
+          "THING_NAME": "UP5306_23052022_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        null
+      ],
+      "dateIndex": "TOWNHALL_MSCL",
+      "date": "LL_MSCL/HA/TOWN"
+    },
+    {
+      "complex": {
+        "name": "SCADA_CONTROL_MSCL",
+        "address": "Shankar_vijay_colony,_civil_lines,_moradabad,_UP,_244001",
+        "uuid": "UP5306_14012022_002",
+        "coco": "True",
+        "lat": "28.851589",
+        "lon": "78.771423",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_INITIATED_DISCONNECT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677612663455,
+          "ttl": 1678044663,
+          "THING_NAME": "UP5306_14012022_002_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SCADA_CONTROL_MSCL",
+      "date": "CONTROL_/A_/SCAD"
+    },
+    {
+      "complex": {
+        "name": "PANCH_BHAWAN_MSCL",
+        "address": "Civil_line,opp_company_bagh,moradabad_244011",
+        "uuid": "UP5306_23052022_001",
+        "coco": "True",
+        "lat": "28.843422",
+        "lon": "78.764697",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "ttl": 1672850720,
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "UP5306_23052022_001_FWC_001",
+          "timestamp": 1672418720081,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "PANCH_BHAWAN_MSCL",
+      "date": "BHAWAN_M/H_/PANC"
+    },
+    {
+      "complex": {
+        "name": "MUKTIDHAM_MSCL",
+        "address": "Muktidham,_ram_ganga_vihar_moradabad_244001",
+        "uuid": "UP5306_20042022_002",
+        "coco": "True",
+        "lat": "28.8880408",
+        "lon": "78.750777",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_INITIATED_DISCONNECT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677045308787,
+          "ttl": 1677477308,
+          "THING_NAME": "UP5306_20042022_002_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MUKTIDHAM_MSCL",
+      "date": "HAM_MSCL/ID/MUKT"
+    },
+    {
+      "complex": {
+        "name": "MDA_COMPLEX_MSCL",
+        "address": "Ashiyana_colony,_mora_mustahkam,_moradabad,_UP,_244001",
+        "uuid": "UP5306_14012022_001",
+        "coco": "True",
+        "lat": "28.871722",
+        "lon": "78.752439",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP5306_14012022_001_MWC_001",
+          "timestamp": 1669955140060,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MDA_COMPLEX_MSCL",
+      "date": "MPLEX_MS/CO/MDA_"
+    },
+    {
+      "complex": {
+        "name": "MADHUBANI_COLONY_MSCL",
+        "address": "Madhubani_colony,_kanth_road_moradabad_244001",
+        "uuid": "UP5306_19042022_001",
+        "coco": "True",
+        "lat": "28.864368",
+        "lon": "78.749453",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677352822954,
+          "ttl": 1677784822,
+          "THING_NAME": "UP5306_19042022_001_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MADHUBANI_COLONY_MSCL",
+      "date": "ANI_COLO/UB/MADH"
+    },
+    {
+      "complex": {
+        "name": "LAW_CHAMBER_MSCL",
+        "address": "Law_chamber,_moradabad,_UP,_244001",
+        "uuid": "UP5306_14012022_004",
+        "coco": "True",
+        "lat": "28.84572",
+        "lon": "78.772797",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1674794966297,
+          "ttl": 1675226966,
+          "THING_NAME": "UP5306_14012022_004_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "LAW_CHAMBER_MSCL",
+      "date": "AMBER_MS/CH/LAW_"
+    },
+    {
+      "complex": {
+        "name": "KAPOOR_COMPANY_MSCL",
+        "address": "Kapoor_company_flyover,_moradabad,_244001",
+        "uuid": "UP5306_23052022_002",
+        "coco": "True",
+        "lat": "28.835784",
+        "lon": "78.763128",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677404871593,
+          "ttl": 1677836871,
+          "THING_NAME": "UP5306_23052022_002_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "KAPOOR_COMPANY_MSCL",
+      "date": "_COMPANY/OR/KAPO"
+    },
+    {
+      "complex": {
+        "name": "GURHATTI_CHAURAHA_MSCL",
+        "address": "Gurhatt_chauraha_moradabad",
+        "uuid": "UP5306_19042022_000",
+        "coco": "True",
+        "lat": "28.841316",
+        "lon": "78.771293",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677560629380,
+          "ttl": 1677992629,
+          "THING_NAME": "UP5306_19042022_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "GURHATTI_CHAURAHA_MSCL",
+      "date": "TI_CHAUR/AT/GURH"
+    },
+    {
+      "complex": {
+        "name": "EMP_OFFICE_MSCL",
+        "address": "Ashiyana_Colony,Moradabad_244001",
+        "uuid": "UP5306_20042022_000",
+        "coco": "False",
+        "lat": "28.88533",
+        "lon": "78.738547",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "IP_ADDRESS": "None",
+          "timestamp": 1674695809784,
+          "ttl": 1675127809,
+          "THING_NAME": "UP5306_20042022_000_FWC_002",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP5306_20042022_000_FWC_001",
+          "timestamp": 1668937426103,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "EMP_OFFICE_MSCL",
+      "date": "FICE_MSC/OF/EMP_"
+    },
+    {
+      "complex": {
+        "name": "DELHI_BUS_STAND",
+        "address": "Gandhi_Nagar,_delhi_bus_stand,_Moradabad_244001",
+        "uuid": "UP5306_23052022_005",
+        "coco": "True",
+        "lat": "28.827785",
+        "lon": "78.771553",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677669665248,
+          "ttl": 1678101665,
+          "THING_NAME": "UP5306_23052022_005_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "DELHI_BUS_STAND",
+      "date": "BUS_STAN/I_/DELH"
+    },
+    {
+      "complex": {
+        "name": "DC_OFFICE_MSCL",
+        "address": "Dc_office,_civil_lines,_moradabad_244001",
+        "uuid": "UP5306_19042022_003",
+        "coco": "False",
+        "lat": "28.84465",
+        "lon": "78.769106",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676439630558,
+          "ttl": 1676871630,
+          "THING_NAME": "UP5306_19042022_003_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676606518768,
+          "ttl": 1677038518,
+          "THING_NAME": "UP5306_19042022_003_MUR_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "DC_OFFICE_MSCL",
+      "date": "ICE_MSCL/FF/DC_O"
+    },
+    {
+      "complex": {
+        "name": "CAMP_OFFICE_MSCL",
+        "address": "Camp_Office,_civil_line,_Moradabad,_244001",
+        "uuid": "UP5306_28092022_000",
+        "coco": "True",
+        "lat": "28.8445700",
+        "lon": "78.7662710",
+        "client": "MSCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_INITIATED_DISCONNECT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1675842011528,
+          "ttl": 1676274011,
+          "THING_NAME": "UP5306_28092022_000_FWC_002",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "CAMP_OFFICE_MSCL",
+      "date": "FFICE_MS/_O/CAMP"
+    },
+    {
+      "complex": {
+        "name": "VASUNDHARA_RRTS",
+        "address": "Gaziabad_",
+        "uuid": "UP2708_10022023_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "NCRTC",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677563321956,
+          "ttl": 1677995321,
+          "THING_NAME": "UP2708_10022023_000_BWT_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "VASUNDHARA_RRTS",
+      "date": "HARA_RRT/ND/VASU"
+    },
+    {
+      "complex": {
+        "name": "TEST_SSF",
+        "address": "Etst",
+        "uuid": "UP2606_30032021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "MandiMC",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "UP2606_30032021_000_MWC_002",
+          "timestamp": 1627563423371,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "UP2606_30032021_000_MWC_001",
+          "timestamp": 1617699531598,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "TEST_SSF",
+      "date": "SF/_S/TEST"
+    },
+    {
+      "complex": {
+        "name": "JRO_IOCL",
+        "address": "Main_road,_ecotech-2,_udyog_vihar,_greater_noida,_UP_201306",
+        "uuid": "UP2606_24092020_001",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP2606_24092020_001_FWC_001",
+          "timestamp": 1642410994964,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP2606_24092020_001_MWC_001",
+          "timestamp": 1651480615958,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "JRO_IOCL",
+      "date": "CL/IO/JRO_"
+    },
+    {
+      "complex": {
+        "name": "JAYPEE_INFRATECH_IOCL",
+        "address": "Expressway_noida,_gautam_budha_nagar,_UP_203201",
+        "uuid": "UP2606_24092020_002",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "UP2606_24092020_002_MWC_001",
+          "timestamp": 1619124216894,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "UP2606_24092020_002_FWC_001",
+          "timestamp": 1622830237961,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "JAYPEE_INFRATECH_IOCL",
+      "date": "_INFRATE/EE/JAYP"
+    },
+    {
+      "complex": {
+        "name": "COCO_IOCL",
+        "address": "Dadri_main_road,_suthiyana,_greater_noida,_UP_201306",
+        "uuid": "UP2606_24092020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP2606_24092020_000_FWC_001",
+          "timestamp": 1634711358183,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "UP2606_24092020_000_MWC_001",
+          "timestamp": 1634549683335,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "COCO_IOCL",
+      "date": "OCL/_I/COCO"
+    },
+    {
+      "complex": {
+        "name": "MANGALAM_FS_IOCL",
+        "address": "Mangalam_indian_oil",
+        "uuid": "RJ2910_26022021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ2910_26022021_000_MWC_001",
+          "timestamp": 1614356872501,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ2910_26022021_000_FWC_001",
+          "timestamp": 1614356650695,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MANGALAM_FS_IOCL",
+      "date": "AM_FS_IO/AL/MANG"
+    },
+    {
+      "complex": {
+        "name": "KOMAL_FS_IOCL",
+        "address": "Koma_filling_station",
+        "uuid": "RJ2909_26022021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ2909_26022021_000_FWC_001",
+          "timestamp": 1614345733514,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ2909_26022021_000_MWC_001",
+          "timestamp": 1614345738842,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "KOMAL_FS_IOCL",
+      "date": "FS_IOCL/L_/KOMA"
+    },
+    {
+      "complex": {
+        "name": "VINAYAK_FS_IOCL",
+        "address": "Vishwakarma_industrial_area,_sikar,_jaipr",
+        "uuid": "RJ2907_22042021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "RJ2907_22042021_000_FWC_001",
+          "timestamp": 1640192025177,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ2907_22042021_000_MWC_001",
+          "timestamp": 1625939130208,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "VINAYAK_FS_IOCL",
+      "date": "K_FS_IOC/YA/VINA"
+    },
+    {
+      "complex": {
+        "name": "HARI_OM_SHANTI_IOCL",
+        "address": "Chandwaji,_Rajasthan_303104",
+        "uuid": "RJ1612_08032021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1612_08032021_000_FWC_001",
+          "timestamp": 1635574389258,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1612_08032021_000_MWC_001",
+          "timestamp": 1635580222682,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "HARI_OM_SHANTI_IOCL",
+      "date": "M_SHANTI/_O/HARI"
+    },
+    {
+      "complex": {
+        "name": "SHRI_RAM_FS_IOCL",
+        "address": "Dudu,_jaipur,_rajasthan",
+        "uuid": "RJ1611_23032021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1611_23032021_000_MWC_001",
+          "timestamp": 1653999760458,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1611_23032021_000_FWC_001",
+          "timestamp": 1619263555586,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SHRI_RAM_FS_IOCL",
+      "date": "AM_FS_IO/_R/SHRI"
+    },
+    {
+      "complex": {
+        "name": "AKASH_FS_IOCL",
+        "address": "Nh_48,_Antela,_Rajasthan_303119",
+        "uuid": "RJ1610_26042021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1610_26042021_000_MWC_001",
+          "timestamp": 1620603233188,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1610_26042021_000_FWC_001",
+          "timestamp": 1638058660458,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "AKASH_FS_IOCL",
+      "date": "FS_IOCL/H_/AKAS"
+    },
+    {
+      "complex": {
+        "name": "GURU_KRIPA_IOCL",
+        "address": "Khojawala,_rajhasthan_",
+        "uuid": "RJ1609_22042021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1609_22042021_000_MWC_001",
+          "timestamp": 1619089499220,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1609_22042021_000_FWC_001",
+          "timestamp": 1619087891971,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "GURU_KRIPA_IOCL",
+      "date": "RIPA_IOC/_K/GURU"
+    },
+    {
+      "complex": {
+        "name": "PARAKRAM_IOCL",
+        "address": "Sumel,jaipur,rajhasthan",
+        "uuid": "RJ1603_23032021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_INITIATED_DISCONNECT",
+          "THING_NAME": "RJ1603_23032021_000_MWC_001",
+          "timestamp": 1656507522909,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1603_23032021_000_FWC_001",
+          "timestamp": 1635247465471,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "PARAKRAM_IOCL",
+      "date": "AM_IOCL/KR/PARA"
+    },
+    {
+      "complex": {
+        "name": "MOTORAIDS_IOCL",
+        "address": "Jaipur,_302005",
+        "uuid": "RJ1603_28062021_001",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "MOTORAIDS_IOCL",
+      "date": "IDS_IOCL/RA/MOTO"
+    },
+    {
+      "complex": {
+        "name": "JP_YADAV_IOCL",
+        "address": "Subash_Nagar,_Shastri_Nagar,_302016",
+        "uuid": "RJ1603_28062021_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "RJ1603_28062021_000_MWC_001",
+          "timestamp": 1624948363554,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        null,
+        null
+      ],
+      "dateIndex": "JP_YADAV_IOCL",
+      "date": "AV_IOCL/AD/JP_Y"
+    },
+    {
+      "complex": {
+        "name": "AASHAYEN_FS_IOCL",
+        "address": "Central_jail,_jaipur",
+        "uuid": "RJ1603_03062021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1603_03062021_000_FWC_001",
+          "timestamp": 1645711641589,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1603_03062021_000_MWC_001",
+          "timestamp": 1622716947793,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "AASHAYEN_FS_IOCL",
+      "date": "EN_FS_IO/AY/AASH"
+    },
+    {
+      "complex": {
+        "name": "SHISHRAM_FS_IOCL",
+        "address": "Village_moujpur,_dausa,_NH11",
+        "uuid": "RJ1101_02062021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "RJ1101_02062021_000_FWC_001",
+          "timestamp": 1642028961133,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "RJ1101_02062021_000_MWC_001",
+          "timestamp": 1639611486981,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SHISHRAM_FS_IOCL",
+      "date": "AM_FS_IO/HR/SHIS"
+    },
+    {
+      "complex": {
+        "name": "TERMINAL_JALANDHAR_IOCL",
+        "address": "Suchi_pind,_jalandhar,_punjab_144004",
+        "uuid": "PB0704_10082021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_INITIATED_DISCONNECT",
+          "THING_NAME": "PB0704_10082021_000_MWC_001",
+          "timestamp": 1628598029556,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "TERMINAL_JALANDHAR_IOCL",
+      "date": "AL_JALAN/IN/TERM"
+    },
+    {
+      "complex": {
+        "name": "ZOO_SITE_GSCDCL",
+        "address": "Near_zoo_gate,_italian_gardan_road",
+        "uuid": "MP1404_25102021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 4,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "MP1404_25102021_000_MWC_001",
+          "timestamp": 1666456149329,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677731597286,
+          "ttl": 1678163597,
+          "THING_NAME": "MP1404_25102021_000_PWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "MP1404_25102021_000_MUR_001",
+          "timestamp": 1648817577024,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_25102021_000_FWC_001",
+          "timestamp": 1665705521090,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "ZOO_SITE_GSCDCL",
+      "date": "TE_GSCDC/SI/ZOO_"
+    },
+    {
+      "complex": {
+        "name": "MORAR_HOSPITAL_GSCDCL",
+        "address": "Morar,_gwalior._MP,_474006",
+        "uuid": "MP1404_14012022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "MP1404_14012022_000_MUR_001",
+          "timestamp": 1645523874882,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "MP1404_14012022_000_PWC_001",
+          "timestamp": 1657265632708,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "MP1404_14012022_000_MWC_001",
+          "timestamp": 1643625895612,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MORAR_HOSPITAL_GSCDCL",
+      "date": "HOSPITAL/R_/MORA"
+    },
+    {
+      "complex": {
+        "name": "KRH_GSCDL",
+        "address": "Kamala_raja_hospital_in_front_of_KRG_College_,gwalior",
+        "uuid": "MP1404_13082020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 4,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_13082020_000_PWC_001",
+          "timestamp": 1613068217126,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_13082020_000_FWC_001",
+          "timestamp": 1663219178613,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_13082020_000_MWC_001",
+          "timestamp": 1629873906814,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_13082020_000_MUR_001",
+          "timestamp": 1664348105887,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "KRH_GSCDL",
+      "date": "CDL/GS/KRH_"
+    },
+    {
+      "complex": {
+        "name": "KRG_GSCDCL",
+        "address": "Kamala_raja_girls_college",
+        "uuid": "MP1404_06022021_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677622224061,
+          "ttl": 1678054224,
+          "THING_NAME": "MP1404_06022021_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676029313825,
+          "ttl": 1676461313,
+          "THING_NAME": "MP1404_06022021_000_FWC_005",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677599833449,
+          "ttl": 1678031833,
+          "THING_NAME": "MP1404_06022021_000_FWC_004",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "KRG_GSCDCL",
+      "date": "CDCL/GS/KRG_"
+    },
+    {
+      "complex": {
+        "name": "IIDC_GSCDCL",
+        "address": "City_center,_Gwalior_474011",
+        "uuid": "MP1404_30052022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 4,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "MP1404_30052022_000_MUR_001",
+          "timestamp": 1668779348546,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_30052022_000_PWC_001",
+          "timestamp": 1655380989661,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "MP1404_30052022_000_MWC_001",
+          "timestamp": 1668779802497,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_30052022_000_FWC_001",
+          "timestamp": 1655276813762,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "IIDC_GSCDCL",
+      "date": "SCDCL/_G/IIDC"
+    },
+    {
+      "complex": {
+        "name": "GSCDCL_H_COURT",
+        "address": "New_High_Ct_Rd,City_Center_,Sharda_Vihar,Gwalior,MP,_pin_-_474002",
+        "uuid": "MP1404_03112020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_03112020_000_FWC_001",
+          "timestamp": 1654749891912,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_03112020_000_MWC_001",
+          "timestamp": 1669807248267,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "GSCDCL_H_COURT",
+      "date": "_H_COURT/CL/GSCD"
+    },
+    {
+      "complex": {
+        "name": "DD_NAGAR_GSCDCL",
+        "address": "Dd_nagar,_gwalior",
+        "uuid": "MP1404_08062021_001",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_08062021_001_MWC_001",
+          "timestamp": 1668797288747,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_08062021_001_PWC_001",
+          "timestamp": 1670159561231,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "DD_NAGAR_GSCDCL",
+      "date": "AR_GSCDC/AG/DD_N"
+    },
+    {
+      "complex": {
+        "name": "COLLECTORATE_GSCDCL",
+        "address": "New_collectorate,_Gwalior,pin_-_474002",
+        "uuid": "MP1404_05112020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 4,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_05112020_000_FWC_001",
+          "timestamp": 1656911675477,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_05112020_000_MUR_001",
+          "timestamp": 1617763884732,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_05112020_000_PWC_001",
+          "timestamp": 1658936870792,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_05112020_000_MWC_001",
+          "timestamp": 1646286020708,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "COLLECTORATE_GSCDCL",
+      "date": "TORATE_G/EC/COLL"
+    },
+    {
+      "complex": {
+        "name": "CIRCUIT_HOUSE_GSCDCL",
+        "address": "Circuit_house,_morar,_gwalior",
+        "uuid": "MP1404_08062021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_08062021_000_MUR_001",
+          "timestamp": 1667973257530,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_08062021_000_FWC_001",
+          "timestamp": 1665061015981,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "CIRCUIT_HOUSE_GSCDCL",
+      "date": "T_HOUSE_/UI/CIRC"
+    },
+    {
+      "complex": {
+        "name": "AIRTEL_CITYCENTRE",
+        "address": "Opposite_airtel_city_centre,_gwalior,_MP",
+        "uuid": "MP1404_23072020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "GSCDCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "MP1404_23072020_000_FWC_001",
+          "timestamp": 1670376337035,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676026030291,
+          "ttl": 1676458030,
+          "THING_NAME": "MP1404_23072020_000_PWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "AIRTEL_CITYCENTRE",
+      "date": "_CITYCEN/EL/AIRT"
+    },
+    {
+      "complex": {
+        "name": "AMBALA_CITY",
+        "address": "Sunset_rd,Sector_7,Ambala,Haryana",
+        "uuid": "HR2600_04022023_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1675495724489,
+          "ttl": 1675927724,
+          "THING_NAME": "HR2600_04022023_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1675495606855,
+          "ttl": 1675927606,
+          "THING_NAME": "HR2600_04022023_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "AMBALA_CITY",
+      "date": "_CITY/LA/AMBA"
+    },
+    {
+      "complex": {
+        "name": "JHA_BUS_STAND_IOCL",
+        "address": "Jhajjar_bus_stand",
+        "uuid": "HR2500_26032022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1675238886913,
+          "ttl": 1675670886,
+          "THING_NAME": "HR2500_26032022_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "ttl": 1673161562,
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2500_26032022_000_MWC_001",
+          "timestamp": 1672729562028,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1675239877141,
+          "ttl": 1675671877,
+          "THING_NAME": "HR2500_26032022_000_PWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "JHA_BUS_STAND_IOCL",
+      "date": "S_STAND_/BU/JHA_"
+    },
+    {
+      "complex": {
+        "name": "UNITED_PETROLEUM_IOCL",
+        "address": "Mangar,_faridabad-gurgaon_rd,_121001",
+        "uuid": "HR2300_28062021_001",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "UNITED_PETROLEUM_IOCL",
+      "date": "_PETROLE/ED/UNIT"
+    },
+    {
+      "complex": {
+        "name": "RnD_CENTER_IOCL",
+        "address": "Sector_13,_121007",
+        "uuid": "HR2300_28062021_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "RnD_CENTER_IOCL",
+      "date": "NTER_IOC/CE/RnD_"
+    },
+    {
+      "complex": {
+        "name": "VANSH_FS_IOCL",
+        "address": "Firoz_shah_gandhi_chowk,_sector_9,122006",
+        "uuid": "HR2201_28062021_001",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "HR2201_28062021_001_BWT_001",
+          "timestamp": 1624952953146,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        null,
+        null
+      ],
+      "dateIndex": "VANSH_FS_IOCL",
+      "date": "FS_IOCL/H_/VANS"
+    },
+    {
+      "complex": {
+        "name": "SANWARIYA_PETRO_IOCL",
+        "address": "Naurangpur_Rd,_sector_79,_122101",
+        "uuid": "HR2201_28062021_002",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "SANWARIYA_PETRO_IOCL",
+      "date": "IYA_PETR/AR/SANW"
+    },
+    {
+      "complex": {
+        "name": "GOVT_PETROL_PUMP_IOCL",
+        "address": "Sector_14,_near_kalyani_hospital",
+        "uuid": "HR2201_28062021_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "GOVT_PETROL_PUMP_IOCL",
+      "date": "ETROL_PU/_P/GOVT"
+    },
+    {
+      "complex": {
+        "name": "GGN_BUS_STAND_IOCL",
+        "address": "Gurgaon_bus_stand",
+        "uuid": "HR2201_04012022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "ttl": 1673693222,
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2201_04012022_000_FWC_001",
+          "timestamp": 1673261222146,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1675058471949,
+          "ttl": 1675490471,
+          "THING_NAME": "HR2201_04012022_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676893923085,
+          "ttl": 1677325923,
+          "THING_NAME": "HR2201_04012022_000_PWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "GGN_BUS_STAND_IOCL",
+      "date": "S_STAND_/BU/GGN_"
+    },
+    {
+      "complex": {
+        "name": "SWAGAT_COCO_IOCL",
+        "address": "Nh48,gurugram,haryana_122051",
+        "uuid": "HR2200_01022021_001",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2200_01022021_001_MWC_001",
+          "timestamp": 1641811397826,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2200_01022021_001_FWC_001",
+          "timestamp": 1641811362975,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SWAGAT_COCO_IOCL",
+      "date": "_COCO_IO/AT/SWAG"
+    },
+    {
+      "complex": {
+        "name": "POONAM_IOCL",
+        "address": "Binola,gurugram_nh-8,_haryana_122413",
+        "uuid": "HR2200_01022021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677761051890,
+          "ttl": 1678193051,
+          "THING_NAME": "HR2200_01022021_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677761662291,
+          "ttl": 1678193662,
+          "THING_NAME": "HR2200_01022021_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "POONAM_IOCL",
+      "date": "_IOCL/AM/POON"
+    },
+    {
+      "complex": {
+        "name": "BOHRA_FUELS_IOCL",
+        "address": "66km_Stone,_Sidrawali,_122413",
+        "uuid": "HR2200_28062021_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "BOHRA_FUELS_IOCL",
+      "date": "FUELS_IO/A_/BOHR"
+    },
+    {
+      "complex": {
+        "name": "NIRMAL_IOCL",
+        "address": "Tauru,haryana",
+        "uuid": "HR2100_30012021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "ttl": 1672488347,
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HR2100_30012021_000_MWC_001",
+          "timestamp": 1672056347606,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2100_30012021_000_FWC_001",
+          "timestamp": 1652871144590,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "NIRMAL_IOCL",
+      "date": "_IOCL/AL/NIRM"
+    },
+    {
+      "complex": {
+        "name": "MOTI_OIL_IOCL",
+        "address": "Pipli,_kurukshetra,haryana_1361118",
+        "uuid": "HR2000_30122020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2000_30122020_000_MWC_001",
+          "timestamp": 1640593796725,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR2000_30122020_000_FWC_001",
+          "timestamp": 1609312769411,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MOTI_OIL_IOCL",
+      "date": "IL_IOCL/_O/MOTI"
+    },
+    {
+      "complex": {
+        "name": "SWASTIK_IOCL",
+        "address": "Behrola,NH-2,Palwal,Haryana,pin_-121105",
+        "uuid": "HR1900_15102020_001",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1900_15102020_001_MWC_001",
+          "timestamp": 1649930806866,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HR1900_15102020_001_FWC_001",
+          "timestamp": 1645325330954,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SWASTIK_IOCL",
+      "date": "K_IOCL/TI/SWAS"
+    },
+    {
+      "complex": {
+        "name": "PWL_BUS_STAND_IOCL",
+        "address": "Palwal_bus_stand,_121102",
+        "uuid": "HR1900_08032022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677226545583,
+          "ttl": 1677658545,
+          "THING_NAME": "HR1900_08032022_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677223620529,
+          "ttl": 1677655620,
+          "THING_NAME": "HR1900_08032022_000_PWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677227093191,
+          "ttl": 1677659093,
+          "THING_NAME": "HR1900_08032022_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "PWL_BUS_STAND_IOCL",
+      "date": "S_STAND_/BU/PWL_"
+    },
+    {
+      "complex": {
+        "name": "B_CHANDA_IOCL",
+        "address": "Khatela_sarai,NH-2,Palwal,Haryana,pin-121102",
+        "uuid": "HR1900_15102020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1900_15102020_000_FWC_001",
+          "timestamp": 1644411518235,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1900_15102020_000_MWC_001",
+          "timestamp": 1624721789740,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "B_CHANDA_IOCL",
+      "date": "DA_IOCL/AN/B_CH"
+    },
+    {
+      "complex": {
+        "name": "MAURYA_IOCL",
+        "address": "Malirya_petroleum,_kail,_yamunanagar",
+        "uuid": "HR1810_28122020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1810_28122020_000_FWC_001",
+          "timestamp": 1647744394269,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1810_28122020_000_MWC_001",
+          "timestamp": 1663415444924,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "MAURYA_IOCL",
+      "date": "_IOCL/YA/MAUR"
+    },
+    {
+      "complex": {
+        "name": "ROHTAK_BUS_STAND_IOCL",
+        "address": "Rajendra_Nagar,Rohtak,Haryana",
+        "uuid": "HR1502_03102022_000",
+        "coco": "False",
+        "lat": "28.9034160",
+        "lon": "76.6004460",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "ttl": 1673173885,
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "HR1502_03102022_000_MWC_001",
+          "timestamp": 1672741885497,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "ttl": 1673173315,
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "HR1502_03102022_000_FWC_001",
+          "timestamp": 1672741315887,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "ROHTAK_BUS_STAND_IOCL",
+      "date": "_BUS_STA/AK/ROHT"
+    },
+    {
+      "complex": {
+        "name": "TIRUPATI_FILLING",
+        "address": "Sangwari,_delhi_jaipur_expy,_molhwas",
+        "uuid": "HR1402_11092020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1402_11092020_000_FWC_001",
+          "timestamp": 1644294353789,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HR1402_11092020_000_MWC_001",
+          "timestamp": 1638999206806,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "TIRUPATI_FILLING",
+      "date": "TI_FILLI/PA/TIRU"
+    },
+    {
+      "complex": {
+        "name": "TERMINAL_REWARI_IOCL",
+        "address": "Reswari_Terminal,iocl",
+        "uuid": "HR1402_26092022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677485167670,
+          "ttl": 1677917167,
+          "THING_NAME": "HR1402_26092022_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "TERMINAL_REWARI_IOCL",
+      "date": "AL_REWAR/IN/TERM"
+    },
+    {
+      "complex": {
+        "name": "SHREE_BALAJI_FS_IOCL",
+        "address": "Delhi-Rewari_Rd,_Baliar_Kalan,_123502",
+        "uuid": "HR1402_28062021_001",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HR1402_28062021_001_BWT_001",
+          "timestamp": 1640158357495,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        null
+      ],
+      "dateIndex": "SHREE_BALAJI_FS_IOCL",
+      "date": "BALAJI_F/E_/SHRE"
+    },
+    {
+      "complex": {
+        "name": "REW_BUS_STAND_IOCL",
+        "address": "Rewari_bus_stand",
+        "uuid": "HR1402_04012022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1402_04012022_000_PWC_001",
+          "timestamp": 1641541869562,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1402_04012022_000_MWC_001",
+          "timestamp": 1671697208454,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1674455931923,
+          "ttl": 1674887931,
+          "THING_NAME": "HR1402_04012022_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "REW_BUS_STAND_IOCL",
+      "date": "S_STAND_/BU/REW_"
+    },
+    {
+      "complex": {
+        "name": "HUMSAFAR_IOCL",
+        "address": "Delhi-Jaipur_Expy,_kanhawas,_123401",
+        "uuid": "HR1402_28062021_000",
+        "coco": "True",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 3,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "dateIndex": "HUMSAFAR_IOCL",
+      "date": "AR_IOCL/AF/HUMS"
+    },
+    {
+      "complex": {
+        "name": "SHAHEED_AZAD_IOCL",
+        "address": "Sangwari_village",
+        "uuid": "HR1401_15022021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1401_15022021_000_MWC_001",
+          "timestamp": 1613474850795,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1401_15022021_000_FWC_001",
+          "timestamp": 1649140919444,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SHAHEED_AZAD_IOCL",
+      "date": "D_AZAD_I/EE/SHAH"
+    },
+    {
+      "complex": {
+        "name": "RAO_INDER_IOCL",
+        "address": "Nandrampur_bass_road,nandrampur_bass,haryana",
+        "uuid": "HR1401_22072020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1401_22072020_000_FWC_001",
+          "timestamp": 1629210038307,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1401_22072020_000_MWC_001",
+          "timestamp": 1616599163993,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "RAO_INDER_IOCL",
+      "date": "DER_IOCL/IN/RAO_"
+    },
+    {
+      "complex": {
+        "name": "SUBH_IOCL",
+        "address": "NH-48,Service_Lane,Bawal,Haryana,pin-123501",
+        "uuid": "HR1400_12102020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1400_12102020_000_FWC_001",
+          "timestamp": 1608869422935,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1400_12102020_000_MWC_001",
+          "timestamp": 1609305488150,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "SUBH_IOCL",
+      "date": "OCL/_I/SUBH"
+    },
+    {
+      "complex": {
+        "name": "DEV_TEST_01",
+        "address": "Add",
+        "uuid": "HR1400_28072020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "MandiMC",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        null
+      ],
+      "dateIndex": "DEV_TEST_01",
+      "date": "ST_01/TE/DEV_"
+    },
+    {
+      "complex": {
+        "name": "AHUJA_IOCL",
+        "address": "Sarai_kohand,_haryana_132114",
+        "uuid": "HR1307_16122020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1307_16122020_000_FWC_001",
+          "timestamp": 1608275741300,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1307_16122020_000_MWC_001",
+          "timestamp": 1617977119746,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "AHUJA_IOCL",
+      "date": "IOCL/A_/AHUJ"
+    },
+    {
+      "complex": {
+        "name": "RIYASAT_ALI_IOCL",
+        "address": "Vpo_karhans,_samalkha,_haryana_132101",
+        "uuid": "HR1305_07122020_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1305_07122020_000_FWC_001",
+          "timestamp": 1635148053345,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HR1305_07122020_000_MWC_001",
+          "timestamp": 1659348020495,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "RIYASAT_ALI_IOCL",
+      "date": "T_ALI_IO/SA/RIYA"
+    },
+    {
+      "complex": {
+        "name": "PANIPAT_REFINERY_IOCL",
+        "address": "Refinery_Rd,_dadlana,_Haryana,_132105",
+        "uuid": "HR1301_29072021_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "HR1301_29072021_000_MWC_001",
+          "timestamp": 1663660632037,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "THING_NAME": "HR1301_29072021_000_FWC_001",
+          "timestamp": 1661422762102,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "PANIPAT_REFINERY_IOCL",
+      "date": "T_REFINE/PA/PANI"
+    },
+    {
+      "complex": {
+        "name": "UPI_TEST",
+        "address": "Mandi_upi_test",
+        "uuid": "HP0501_21122022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "DEV_TEST",
+        "isSelected": false
+      },
+      "count": 1,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677244152398,
+          "ttl": 1677676152,
+          "THING_NAME": "HP0501_21122022_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "UPI_TEST",
+      "date": "ST/TE/UPI_"
+    },
+    {
+      "complex": {
+        "name": "TEST_PREMISE",
+        "address": "Test_premise",
+        "uuid": "HP0501_08072022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "DEV_TEST",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HP0501_08072022_000_MWC_002",
+          "timestamp": 1657356329004,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "THING_NAME": "HP0501_08072022_000_MWC_001",
+          "timestamp": 1662099525155,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "TEST_PREMISE",
+      "date": "REMISE/_P/TEST"
+    },
+    {
+      "complex": {
+        "name": "TEST_AWS",
+        "address": "Test_aws",
+        "uuid": "HP0501_03092021_000",
+        "coco": "False",
+        "lat": "28.46338333333334",
+        "lon": "77.05105166666667",
+        "client": "DEV_TEST",
+        "isSelected": false
+      },
+      "count": 4,
+      "table": [
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "IP_ADDRESS": "None",
+          "timestamp": 1677751363147,
+          "ttl": 1678183363,
+          "THING_NAME": "HP0501_03092021_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HP0501_03092021_000_PWC_001",
+          "timestamp": 1652343014655,
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CLIENT_ERROR",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676119085892,
+          "ttl": 1676551085,
+          "THING_NAME": "HP0501_03092021_000_BWT_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "CONNECTION_LOST",
+          "THING_NAME": "HP0501_03092021_000_MWC_001",
+          "timestamp": 1671604948994,
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "TEST_AWS",
+      "date": "WS/_A/TEST"
+    },
+    {
+      "complex": {
+        "name": "BRIJWASAN_TERM_IOCL",
+        "address": "Shahi_road,bharthal,ne_delhi,11061",
+        "uuid": "DL0703_17052022_000",
+        "coco": "False",
+        "lat": "15.0909090",
+        "lon": "76.0909090",
+        "client": "IOCL",
+        "isSelected": false
+      },
+      "count": 2,
+      "table": [
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676453273416,
+          "ttl": 1676885273,
+          "THING_NAME": "DL0703_17052022_000_MWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        },
+        {
+          "DISCONNECT_REASON": "MQTT_KEEP_ALIVE_TIMEOUT",
+          "IP_ADDRESS": "None",
+          "timestamp": 1676453881825,
+          "ttl": 1676885881,
+          "THING_NAME": "DL0703_17052022_000_FWC_001",
+          "CONNECTION_STATUS": "OFFLINE"
+        }
+      ],
+      "dateIndex": "BRIJWASAN_TERM_IOCL",
+      "date": "SAN_TERM/WA/BRIJ"
+    }
+  ],
+  "lowWaterComplexes": [],
+  "activeTickets": [
+    {
+      "yearMonthCode": "22-D",
+      "ticket_id": "SMT-22-D-1001",
+      "creator_role": "Vendor Admin",
+      "complex_name": "TEST_SSF",
+      "ticket_status": "Queued",
+      "timestamp": "1653128676323",
+      "city_name": "NOIDA",
+      "client_name": "MandiMC",
+      "state_name": "UTTAR_PRADESH",
+      "state_code": "UP",
+      "district_name": "GAUTAM_BUDDHA_NAGAR",
+      "city_code": "UP2606",
+      "creator_id": "test_rk_00",
+      "criticality": "Urgent",
+      "district_code": "DUP26",
+      "description": "TEST",
+      "title": "TEST"
+    }
+  ],
+  "uiResult": {
+    "defautValues": false,
+    "data": {
+      "CLIENT": "SSF",
+      "alp": "true",
+      "ammonia": "true",
+      "total_usage": "true",
+      "rfid_profile": "true",
+      "water_saved": "true",
+      "carbon_monooxide": "true",
+      "mp2_valve": "true",
+      "choke_health": "true",
+      "mp1_valve": "true",
+      "turbidity_value": "true",
+      "air_dryer_profile": "true",
+      "air_dryer_health": "true",
+      "mp3_valve": "true",
+      "usage_charge": "true",
+      "average_feedback": "true",
+      "collection_stats": "true",
+      "tap_health": "true",
+      "mp4_valve": "true",
+      "luminous": "true",
+      "methane": "true",
+      "usage_charge_profile": "true",
+      "TIMESTAMP": "1655467586807"
+    }
+  },
+  "bwtdashboardChartData": {
+    "waterRecycled": [
+      {
+        "date": "02/03/2023",
+        "dateIndex": "20230302",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "01/03/2023",
+        "dateIndex": "20230301",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "28/02/2023",
+        "dateIndex": "20230228",
+        "all": null,
+        "bwt": null
+      },
+      {
+        "date": "27/02/2023",
+        "dateIndex": "20230227",
+        "all": null,
+        "bwt": null
+      },
+      {
+        "date": "26/02/2023",
+        "dateIndex": "20230226",
+        "all": null,
+        "bwt": null
+      },
+      {
+        "date": "25/02/2023",
+        "dateIndex": "20230225",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "24/02/2023",
+        "dateIndex": "20230224",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "23/02/2023",
+        "dateIndex": "20230223",
+        "all": null,
+        "bwt": null
+      },
+      {
+        "date": "22/02/2023",
+        "dateIndex": "20230222",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "21/02/2023",
+        "dateIndex": "20230221",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "20/02/2023",
+        "dateIndex": "20230220",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "19/02/2023",
+        "dateIndex": "20230219",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "18/02/2023",
+        "dateIndex": "20230218",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "17/02/2023",
+        "dateIndex": "20230217",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "16/02/2023",
+        "dateIndex": "20230216",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "15/02/2023",
+        "dateIndex": "20230215",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "14/02/2023",
+        "dateIndex": "20230214",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "13/02/2023",
+        "dateIndex": "20230213",
+        "all": 402440,
+        "bwt": 402440
+      },
+      {
+        "date": "12/02/2023",
+        "dateIndex": "20230212",
+        "all": 202440,
+        "bwt": 202440
+      },
+      {
+        "date": "11/02/2023",
+        "dateIndex": "20230211",
+        "all": 552440,
+        "bwt": 552440
+      },
+      {
+        "date": "10/02/2023",
+        "dateIndex": "20230210",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "09/02/2023",
+        "dateIndex": "20230209",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "08/02/2023",
+        "dateIndex": "20230208",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "07/02/2023",
+        "dateIndex": "20230207",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "06/02/2023",
+        "dateIndex": "20230206",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "05/02/2023",
+        "dateIndex": "20230205",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "04/02/2023",
+        "dateIndex": "20230204",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "03/02/2023",
+        "dateIndex": "20230203",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "02/02/2023",
+        "dateIndex": "20230202",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "01/02/2023",
+        "dateIndex": "20230201",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "31/01/2023",
+        "dateIndex": "20230131",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "30/01/2023",
+        "dateIndex": "20230130",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "29/01/2023",
+        "dateIndex": "20230129",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "28/01/2023",
+        "dateIndex": "20230128",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "27/01/2023",
+        "dateIndex": "20230127",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "26/01/2023",
+        "dateIndex": "20230126",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "25/01/2023",
+        "dateIndex": "20230125",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "24/01/2023",
+        "dateIndex": "20230124",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "23/01/2023",
+        "dateIndex": "20230123",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "22/01/2023",
+        "dateIndex": "20230122",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "21/01/2023",
+        "dateIndex": "20230121",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "20/01/2023",
+        "dateIndex": "20230120",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "19/01/2023",
+        "dateIndex": "20230119",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "18/01/2023",
+        "dateIndex": "20230118",
+        "all": 0,
+        "bwt": 0
+      },
+      {
+        "date": "17/01/2023",
+        "dateIndex": "20230117",
+        "all": 0,
+        "bwt": 0
+      }
+    ]
+  },
+  "bwtpieChartData": {
+    "usage": [
+      {
+        "name": "BWT",
+        "value": null
+      }
+    ]
+  },
+  "bwtdataSummary": {
+    "waterRecycled": null
+  }
+}

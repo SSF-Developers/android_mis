@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:layout_weight="2"
+    android:layout_margin="@dimen/margin_normal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/Label.FormName"
+        android:layout_width="0dp"
+        android:layout_weight=".75"
+        android:text="User Name "
+        app:layout_constraintRight_toLeftOf="@+id/countStatesColon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Label.FormNameSm"
+        android:text=" : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/value"
+        style="@style/Label.FormValue"
+        android:layout_width="0dp"
+        android:layout_weight="1.25"
+        android:text="ssf_developer"
+        app:layout_constraintLeft_toRightOf="@+id/countStatesColon"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/box_health_card">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/primary"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Label.HealthCard"
+                android:text="AWS Commissioning"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias=".2"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <android.widget.Button
+                android:id="@+id/details"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".1"
+                style="@style/Button.CardActionSM"
+                android:text="Details" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/surface_white_sheet"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small"
+            android:stateListAnimator="@animator/elevate">
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/Label.Card"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

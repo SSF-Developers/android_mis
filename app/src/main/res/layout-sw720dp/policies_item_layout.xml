@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    style="@style/Page.FullWidth"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/policyDetailsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/policyDetails"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="12dp"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/selectPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/policyDetailsTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/policyDetailsTv"
+            app:srcCompat="@drawable/check"
+            android:focusable="true"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/editPolicyButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="@id/policyDetailsTv"
+            app:layout_constraintBottom_toBottomOf="@id/policyDetailsTv"
+            app:layout_constraintEnd_toStartOf="@id/selectPolicy"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/edit_square"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/policyNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="#F0F8FF"
+            android:textColorHint="@color/blackOlive"
+            app:boxStrokeColor="@color/blackOlive"
+            app:boxStrokeErrorColor="@color/alert"
+            app:hintTextColor="@color/button_default"
+            app:layout_constraintBottom_toTopOf="@id/cameraEnabledContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/policyDetailsTv"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/policyNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Policy Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:backgroundTint="@color/whiteSmoke"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cameraEnabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/policyNameLayout"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/cameraEnabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/cameraDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/cameraEnabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addUserDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cameraEnabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/addUserDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/addUserDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/addUserDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/removeUserDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addUserDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/removeUserDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/removeUserDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/removeUserDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/factoryResetDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/removeUserDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/factoryResetDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/factoryResetDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/factoryResetDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mountPhysicalMediaDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/factoryResetDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/mountPhysicalMediaDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/mountPhysicalMediaDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/mountPhysicalMediaDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/safeBootDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mountPhysicalMediaDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/safeBootDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/safeBootDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/safeBootDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/uninstallAppDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/safeBootDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/uninstallAppDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/uninstallAppsDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/uninstallAppsDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bluetoothConfigDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uninstallAppDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/bluetoothConfigDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/bluetoothConfigDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/bluetoothConfigDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vpnConfigDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bluetoothConfigDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/vpnConfigDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/vpnConfigDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/vpnConfigDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/networkResetDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vpnConfigDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/networkResetDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/networkResetDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/networkResetDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/smsDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/networkResetDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/smsDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/smsDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/smsDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/modifyAccountsDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/smsDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/modifyAccountsDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/modifyAccountsDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/modifyAccountsDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/outgoingCallsDisabledContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/modifyAccountsDisabledContainer"
+            app:cardCornerRadius="24dp"
+            android:backgroundTint="@color/whiteSmoke"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/outgoingCallsDisabledKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/outgoingCallsDisabled"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/outgoingCallsDisabledValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:checked="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/kioskCustomizationEnabledContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/outgoingCallsDisabledContainer"
+                    app:cardCornerRadius="24dp"
+                    android:backgroundTint="@color/whiteSmoke"
+                    android:layout_margin="16dp"
+                    android:elevation="4dp"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/kioskCustomizationEnabledKey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/kioskCustomizationEnabled"
+                            android:textSize="22sp"
+                            android:layout_margin="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/kioskCustomizationEnabledValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="18dp"
+                            android:thumb="@drawable/thumb"
+                            app:track="@drawable/track"
+                            android:checked="true"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+        -->
+
+        <TextView
+            android:id="@+id/kioskCustomizationHeadingTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_corners"
+            app:backgroundTint="@color/button_default"
+            android:layout_marginHorizontal="12dp"
+            android:text="@string/kioskCustomization"
+            android:textStyle="bold"
+            android:textColor="@color/blackNight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="24sp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/outgoingCallsDisabledContainer"
+            />
+
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/kioskCustomizationContainer"
+                    app:layout_constraintTop_toBottomOf="@id/kioskCustomizationHeadingTv"
+                    app:layout_constraintBottom_toTopOf="@id/applicationHeading"
+                    android:visibility="visible"
+                    android:background="@drawable/round_corners"
+                    app:backgroundTint="@color/whiteSmoke"
+                    android:padding="8dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="@string/power_button_action_"
+                            android:textSize="20sp"
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blackNight"
+                            android:textIsSelectable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/powerActionButtonValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:layout_margin="4dp"
+                            android:text="@string/power_button_action"
+                            android:textColor="@color/blackNight"
+                            android:textSize="20sp"
+                            android:textIsSelectable="true"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="#343434" />
+
+                    <LinearLayout
+                        android:id="@+id/systemErrorWarningLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="4dp"
+                            android:text="@string/system_error_warning_"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textColor="@color/blackNight"
+                            android:textIsSelectable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/systemErrorWarningValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:layout_margin="4dp"
+                            android:text="@string/system_error_warning"
+                            android:textColor="@color/blackNight"
+                            android:textSize="20sp"
+                            android:textIsSelectable="true"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="#343434" />
+
+                    <LinearLayout
+                        android:id="@+id/systemNavigationLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:layout_margin="4dp"
+                            android:text="@string/system_navigation_"
+                            android:textSize="20sp"
+                            android:textColor="@color/blackNight"
+                            android:textIsSelectable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/systemNavigationValue"
+                            android:layout_margin="4dp"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/system_navigation"
+                            android:textColor="@color/blackNight"
+                            android:textSize="20sp"
+                            android:textIsSelectable="true"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="#343434" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:layout_margin="4dp"
+                            android:text="@string/status_bar_"
+                            android:textSize="20sp"
+                            android:textColor="@color/blackNight"
+                            android:textIsSelectable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/statusBarValue"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="4dp"
+                            android:text="@string/status_bar"
+                            android:textColor="@color/blackNight"
+                            android:textSize="20sp"
+                            android:textIsSelectable="true"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="#343434" />
+
+                    <LinearLayout
+                        android:id="@+id/deviceSettingsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="@string/device_settings_"
+                            android:textSize="20sp"
+                            android:textColor="@color/blackNight"
+                            android:textIsSelectable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/deviceSettingsValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:text="@string/device_settings"
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blackNight"
+                            android:textSize="20sp"
+                            android:textIsSelectable="true"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+        -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kioskCustomizationHeadingTv"
+            app:layout_constraintBottom_toTopOf="@id/systemErrorWarningLayout"
+            app:endIconTint="@color/black"
+            android:id="@+id/powerButtonActionLayout"
+            android:textColorHint="@color/blackNight"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            android:layout_marginTop="16dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/powerButtonActionTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/power_button_action"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/powerButtonActionLayout"
+            app:layout_constraintBottom_toTopOf="@id/systemNavigationLayout"
+            app:endIconTint="@color/black"
+            android:id="@+id/systemErrorWarningLayout"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            android:textColorHint="@color/blackNight"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/systemErrorWarningTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/system_error_warning"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/systemErrorWarningLayout"
+            app:layout_constraintBottom_toTopOf="@id/statusBarLayout"
+            app:endIconTint="@color/black"
+            android:id="@+id/systemNavigationLayout"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            android:textColorHint="@color/blackNight"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/systemNavigationTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/system_navigation"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/systemNavigationLayout"
+            app:layout_constraintBottom_toTopOf="@id/deviceSettingsLayout"
+            app:endIconTint="@color/black"
+            android:id="@+id/statusBarLayout"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            android:textColorHint="@color/blackNight"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/statusBarTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/status_bar"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statusBarLayout"
+            app:layout_constraintBottom_toTopOf="@id/applicationHeading"
+            app:endIconTint="@color/black"
+            android:id="@+id/deviceSettingsLayout"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            android:textColorHint="@color/blackNight"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/deviceSettingsLayoutTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundTint="@color/whiteSmoke"
+                android:hint="@string/device_settings"
+                android:textColor="#1B1A1A"
+                android:inputType="none"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--       <TextView
+                   android:id="@+id/kioskCustomizationErrorTv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="14sp"
+                   android:text="Kiosk Customization is required"
+                   android:textColor="@color/alert"
+                   android:visibility="gone"
+                   app:layout_constraintTop_toBottomOf="@id/kioskCustomizationContainer"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   android:layout_marginEnd="12dp"
+                   android:layout_marginVertical="8dp"
+                   />-->
+
+
+        <TextView
+            android:id="@+id/applicationHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applications"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:background="@drawable/round_corners"
+            app:backgroundTint="@color/button_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/deviceSettingsLayout"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:layout_marginHorizontal="12dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/applicationsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/applicationHeading" />
+
+        <TextView
+            android:id="@+id/kioskAppErrorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kioskAppNotSelected"
+            android:textSize="12sp"
+            android:textColor="@color/alert"
+            app:layout_constraintTop_toBottomOf="@id/applicationsList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/addNewApplication"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/appListEmptyErrorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appListEmpty"
+            android:textSize="12sp"
+            android:textColor="@color/alert"
+            app:layout_constraintTop_toBottomOf="@id/applicationsList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/addNewApplication"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addNewApplication"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kioskAppErrorTv"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/button_default"
+            android:text="@string/add"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chooseKioskAppButton"
+            app:layout_constraintEnd_toStartOf="@id/addNewApplication"
+            app:layout_constraintTop_toBottomOf="@id/kioskAppErrorTv"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/button_default"
+            android:text="@string/chooseKiosk"
+            android:enabled="false"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/update"
+            android:id="@+id/submitEditPolicy"
+            app:backgroundTint="@color/button_default"
+            app:layout_constraintTop_toBottomOf="@id/addNewApplication"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

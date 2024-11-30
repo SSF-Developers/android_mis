@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth">
+
+    <Button
+        android:id="@+id/loadAccessTree"
+        style="@style/Container.Action.Positive.XSmall"
+        android:layout_margin="@dimen/margin_small"
+        android:text="Selection Tree"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        app:layout_constraintLeft_toRightOf="@+id/loadAccessTree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loadAccessTree"
+        app:layout_constraintBottom_toBottomOf="@+id/loadAccessTree"
+        style="@style/Container.FullWidth"
+        android:layout_width="0dp"
+        android:layout_marginLeft="@dimen/margin_small"
+        app:tabContentStart="56dp"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/text_border_default"
+        app:tabTextColor="@color/grey_300"
+        app:tabMode="scrollable">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Graphical Report" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Download Report" />
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            style="@style/Container.WrapContent"-->
+<!--            android:text="Data Report" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            style="@style/Container.WrapContent"-->
+<!--            android:text="Raw Data" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            style="@style/Container.WrapContent"-->
+<!--            android:text="Config Log" />-->
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            style="@style/Container.WrapContent"-->
+<!--            android:text="Command Log" />-->
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        style="@style/FormContainer.ListX"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:padding="@dimen/margin_x_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

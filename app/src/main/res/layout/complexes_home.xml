@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page">
+
+    <LinearLayout
+        android:id="@+id/container"
+        style="@style/FormContainer.Normal"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/summaryContainer"
+            style="@style/Container.FullWidth">
+            <TextView
+                android:id="@+id/countComplexes"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Label.Value"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/countComplexesColon"
+                app:layout_constraintRight_toLeftOf="@+id/countComplexes"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Label.Name"
+                android:text=" : "/>
+            <TextView
+                app:layout_constraintRight_toLeftOf="@+id/countComplexesColon"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Label.Name"
+                android:text="Complexes "/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_normal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"/>
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_normal"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="148dp">
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

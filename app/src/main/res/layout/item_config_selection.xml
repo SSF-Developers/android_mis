@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Label.FormName"
+    android:layout_width="wrap_content"
+    android:paddingLeft="@dimen/margin_x_small"
+    android:paddingTop="@dimen/margin_small"
+    android:gravity="left"
+    android:paddingRight="1dp"
+    android:paddingBottom="@dimen/margin_small"
+    android:text="soat "
+    />

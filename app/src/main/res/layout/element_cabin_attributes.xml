@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/surface_white_sheet"
+    android:padding="@dimen/padding_form_basic"
+    android:elevation="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/H3"
+        android:text="@string/cabinAttributes" />
+
+    <LinearLayout
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/cabinNameLabel"
+            android:text="@string/cabinName"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/cabinName"
+                style="@style/FormField"/>
+            <TextView
+                android:id="@+id/cabinNameErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/cabinTypeLabel"
+            android:text="@string/cabinType"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/cabinType"
+                style="@style/FormField_DropDown"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/cabinTypeErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userTypeContainer"
+        android:visibility="gone"
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/userTypeLabel"
+            android:text="@string/userType"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/userType"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/userTypeErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usageChargeTypeContainer"
+        android:visibility="gone"
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/usageChargeTypeLabel"
+            android:text="@string/usageChargeType"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/usageChargeType"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/usageChargeTypeErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/urinalCountContainer"
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/urinalCountLabel"
+            android:text="@string/urinalCount"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <EditText
+                android:id="@+id/urinalCount"
+                style="@style/FormField_Numeric"/>
+            <TextView
+                android:id="@+id/urinalCountErr"
+                android:text="@string/required"
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bwtCapacityContainer"
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/bwtCapacityLabel"
+            android:text="@string/bwtCapacity"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <EditText
+                android:id="@+id/bwtCapacity"
+                style="@style/FormField_Numeric"/>
+            <TextView
+                android:id="@+id/bwtCapacityErr"
+                android:text="@string/required"
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bwtLevelContainer"
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/bwtLevelLabel"
+            android:text="@string/bwtLevel"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/bwtLevel"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/bwtLevelErr"
+                android:text="@string/required"
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/suffixContainer"
+        style="@style/FormRowContainer">
+        <TextView
+            android:text="@string/thingNameSuffix"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/suffix"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/suffixErr"
+                android:text="@string/required"
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".ui.management.EnrollDevice.Fragments.FragmentFour"
+    style="@style/Page.FullWidth"
+    >
+
+    <TextView
+        android:id="@+id/deviceDetailsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deviceDetails"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceDetailsTv"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/serial_number"
+        android:textColorHint="@color/blackNight"
+        app:startIconDrawable="@drawable/ic_wc_male"
+        app:boxBackgroundMode="outline"
+        app:startIconTint="@color/black"
+        app:boxStrokeWidth="2dp"
+        android:id="@+id/serialNumberLayout"
+        app:boxStrokeColor="@color/button_default"
+        app:hintTextColor="@color/button_default"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/serialNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/blackOlive"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="12dp"
+        tools:targetApi="lollipop"
+        android:src="@drawable/left"
+        app:tint="@color/white"
+        app:backgroundTint="@color/primary"
+        android:contentDescription="@string/previous"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:src="@drawable/right"
+        app:backgroundTint="@color/primary"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/next"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Container.FullWidth"
+        android:layout_margin="4dp"
+        android:background="@drawable/surface_white_sheet"
+        android:elevation="4dp"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/ImageHolder.TreeIcon"
+            android:src="@drawable/ic_expand"
+            app:layout_constraintBottom_toBottomOf="@+id/subTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/AccessTree.State_SM"
+            android:layout_marginLeft="1dp"
+            android:text="User Details"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/icon"
+            app:layout_constraintRight_toLeftOf="@+id/recursive"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="@style/AccessTree.Complex_SM"
+            android:layout_marginLeft="1dp"
+            android:text="Turn on unit lights for 10 seconds"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/icon"
+            app:layout_constraintRight_toLeftOf="@+id/submit"
+            android:layout_marginRight="@dimen/text_size_small"
+            app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/submit"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Submit"
+            android:layout_marginRight="@dimen/margin_small"
+            style="@style/Container.Action.Positive.XSmall"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

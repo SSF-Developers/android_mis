@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/red_cancel"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/cancelDialog"
+                android:visibility="visible"
+                />
+
+            <include
+                android:id="@+id/locationContainer"
+                layout="@layout/element_complex_select_complex"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/clientContainer"
+                layout="@layout/element_complex_client_ro" />
+
+            <include
+                android:id="@+id/attributesContainer"
+                layout="@layout/element_complex_attributes" />
+
+            <include
+                android:id="@+id/providerContainer"
+                layout="@layout/element_complex_providers" />
+
+            <include
+                android:id="@+id/routerDetailsContainer"
+                layout="@layout/router_attributes" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/updateComplex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            app:backgroundTint="@color/primary"
+            android:contentDescription="@string/update"
+            android:gravity="bottom|end"
+            android:src="@drawable/pencil"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:fabSize="mini"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deleteComplex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            app:backgroundTint="@color/primary"
+            android:contentDescription="@string/delete"
+            android:gravity="bottom|end"
+            android:src="@drawable/delete_small"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@id/updateComplex"
+            app:fabSize="mini"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

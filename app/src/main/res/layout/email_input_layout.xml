@@ -1,0 +1,34 @@
+
+<com.google.android.material.textfield.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    app:boxStrokeColor="@color/button_default"
+    app:hintTextColor="@color/button_default"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:padding="12dp"
+    android:background="@color/white"
+    android:textColorHint="@color/black"
+    app:boxCornerRadiusBottomEnd="8dp"
+    app:boxCornerRadiusBottomStart="8dp"
+    app:boxCornerRadiusTopEnd="8dp"
+    app:boxCornerRadiusTopStart="8dp"
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        app:backgroundTint="@color/whiteSmoke"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>

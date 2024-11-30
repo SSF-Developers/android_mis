@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Container.FullWidth"
+        android:paddingLeft="@dimen/margin_x_small"
+        android:paddingTop="@dimen/margin_x_small"
+        android:paddingBottom="@dimen/margin_x_small">
+
+        <ImageView
+            android:id="@+id/icon"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/ic_not_selected"
+            style="@style/ImageHolder.TreeIcon"/>
+        <!--au QA :rahul karn  padding added -->
+        <TextView
+            android:id="@+id/title"
+            app:layout_constraintLeft_toRightOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/recursive"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginLeft="1dp"
+            android:padding="2dp"
+            style="@style/AccessTree.Complex"
+            android:text="User Details" />
+
+        <CheckBox
+            android:id="@+id/recursive"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintRight_toRightOf="parent"
+            style="@style/CheckBox.Small"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text=""/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/List.Tree"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

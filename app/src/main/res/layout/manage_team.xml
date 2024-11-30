@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page"
+    android:orientation="vertical">
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_normal" />
+
+    <LinearLayout
+        style="@style/Container.FillParent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/Container.FullWidth">
+
+            <Button
+                android:id="@+id/createUser"
+                style="@style/Container.Action.Positive"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:text="Add Team Member"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/grantPermission"
+                style="@style/Container.Action.Positive"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:text="Grant Permission"
+                app:layout_constraintLeft_toRightOf="@id/createUser"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/teamSize"
+                style="@style/Label.Value"
+                android:text="0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/labelTeamSize" />
+
+            <TextView
+                android:id="@+id/countStatesColon"
+                style="@style/Label.Name"
+                android:text=" : "
+                app:layout_constraintRight_toLeftOf="@+id/teamSize"
+                app:layout_constraintTop_toTopOf="@+id/labelTeamSize" />
+
+            <TextView
+                android:id="@+id/labelTeamSize"
+                style="@style/Label.Name"
+                android:layout_marginTop="2dp"
+                android:text="Team Size "
+                app:layout_constraintBottom_toBottomOf="@+id/createUser"
+                app:layout_constraintRight_toLeftOf="@+id/countStatesColon"
+                app:layout_constraintTop_toBottomOf="@+id/grantPermission" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/teamRv"
+            style="@style/Container.FillParent.WithPadding" />
+
+    </LinearLayout>
+
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_x_large" />
+
+</LinearLayout>

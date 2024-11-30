@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Add New Application"
+        android:textAlignment="center"
+        android:textColor="@color/blackNight"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/packageNameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_cancel"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/close"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/packageNameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/packageName"
+        android:textColorHint="@color/blackNight"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:endIconDrawable="@drawable/ic_check_availability"
+        app:endIconMode="custom"
+        app:endIconTint="@color/black"
+        app:helperTextTextColor="@color/blackNight"
+        app:hintTextColor="@color/button_default"
+        app:layout_constraintBottom_toTopOf="@id/installTypeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/packageNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/blackNight"
+            app:backgroundTint="@color/whiteSmoke" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/packageNameLayout"
+        app:layout_constraintBottom_toTopOf="@id/permissionPolicyLayout"
+        app:endIconTint="@color/black"
+        android:id="@+id/installTypeLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:textColorHint="@color/blackNight"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/installTypeTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:hint="@string/installType"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/installTypeLayout"
+        app:layout_constraintBottom_toTopOf="@id/autoUpdateModeLayout"
+        app:endIconTint="@color/black"
+        android:id="@+id/permissionPolicyLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:textColorHint="@color/blackNight"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/permissionPolicyTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:hint="@string/defaultPermissionPolicy"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/permissionPolicyLayout"
+        app:layout_constraintBottom_toTopOf="@id/userControlSettingsLayout"
+        app:endIconTint="@color/black"
+        android:id="@+id/autoUpdateModeLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:textColorHint="@color/blackNight"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoUpdateModeLayoutTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:hint="@string/autoUpdateMode"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoUpdateModeLayout"
+        app:layout_constraintBottom_toTopOf="@id/submitButton"
+        app:endIconTint="@color/black"
+        android:id="@+id/userControlSettingsLayout"
+        android:textColorHint="@color/blackNight"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/userControlSettingsTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:hint="@string/userControlSettings"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userControlSettingsLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@color/button_default"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

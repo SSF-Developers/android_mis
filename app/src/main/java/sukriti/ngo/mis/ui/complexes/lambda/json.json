@@ -1,0 +1,52 @@
+[
+  {
+    "cities": [
+      {
+        "code": "UP2606",
+        "complexes": [
+          {
+            "address": "Dadri_main_road,_suthiyana,_greater_noida,_UP_201306",
+            "coco": "False",
+            "isSelected": 0,
+            "lat": "15.0909090",
+            "lon": "76.0909090",
+            "name": "COCO_IOCL",
+            "uuid": "UP2606_24092020_000"
+          },
+          {
+            "address": "Expressway_noida,_gautam_budha_nagar,_UP_203201",
+            "coco": "False",
+            "isSelected": 0,
+            "lat": "15.0909090",
+            "lon": "76.0909090",
+            "name": "JAYPEE_INFRATECH_IOCL",
+            "uuid": "UP2606_24092020_002"
+          },
+          {
+            "address": "Main_road,_ecotech-2,_udyog_vihar,_greater_noida,_UP_201306",
+            "coco": "False",
+            "isSelected": 0,
+            "lat": "15.0909090",
+            "lon": "76.0909090",
+            "name": "JRO_IOCL",
+            "uuid": "UP2606_24092020_001"
+          },
+          {
+            "address": "Etst",
+            "coco": "False",
+            "isSelected": 0,
+            "lat": "15.0909090",
+            "lon": "76.0909090",
+            "name": "TEST_SSF",
+            "uuid": "UP2606_30032021_000"
+          }
+        ],
+        "name": "NOIDA",
+        "recursive": 1
+      }
+    ],
+    "code": "DUP26",
+    "name": "GAUTAM_BUDDHA_NAGAR",
+    "recursive": 1
+  }
+]

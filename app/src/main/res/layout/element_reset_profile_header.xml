@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/title_01"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_02"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_03"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_04"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_05"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_06"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_07"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_08"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_09"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_10"
+        style="@style/Tabular.Title"/>
+
+    <TextView
+        android:id="@+id/title_11"
+        style="@style/Tabular.Title"/>
+
+
+</LinearLayout>
+
+
+

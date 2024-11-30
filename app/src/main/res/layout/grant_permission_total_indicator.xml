@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/totalIndicatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Total Indicator"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/totalIndicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/totalIndicatorTextView"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="177dp"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchTotalUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Total Usage"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchAverageFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Average Feedback"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchWaterSaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Water Saved"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

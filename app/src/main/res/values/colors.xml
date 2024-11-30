@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbar_background">#404142</color>
+    <color name="toolbar_items">#404142</color>
+    <color name="alert">#AC1600</color>
+    <color name="success">#37A51C</color>
+    <color name="button_default">@color/primary</color>
+    <color name="informative_message">#329AD6</color>
+    <color name="button_pressed">@color/primary_light</color>
+    <color name="text_border_default">#303232</color>
+    <color name="text_border_selected">@color/primary_dark</color>
+    <color name="warning">#E94700</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="grey_100">#F5F7F7</color>
+    <color name="grey_150">#C0C0C0</color>
+    <color name="grey_250">#D3D3D3</color>
+    <color name="grey_300">#8D9496</color>
+    <color name="grey_350">#D8D6D6</color>
+    <color name="grey_400">#5A5D5E</color>
+    <color name="grey_500">#404142</color>
+    <color name="grey_600">#303232</color>
+    <color name="grey_700">#1D1E1E</color>
+    <color name="primary">#5DC0A6</color>
+    <color name="primary_dark">#7AFFDC</color>
+    <color name="primary_light">#94FFE2</color>
+    <color name="accent">#FFF76E</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="accent_trans">#FFF76E00</color>
+    <color name="grey_trans">#80000000</color>
+    <color name="grey_trans_">#CC000000</color>
+    <color name="enterpriseColor">#828282</color>
+
+    <color name="mwc">#AC1600</color>
+    <color name="fwc">#37A51C</color>
+    <color name="pwc">@color/primary</color>
+    <color name="mur">#329AD6</color>
+    <color name="total">#E94700</color>
+    <color name="bwt">#E10753</color>
+
+    <color name="rated_1">#AC1600</color>
+    <color name="rated_2">#37A51C</color>
+    <color name="rated_3">@color/primary</color>
+    <color name="rated_4">#329AD6</color>
+    <color name="rated_5">#E94700</color>
+
+    <color name="gauge_good">#37A51C</color>
+    <color name="gauge_average">#FFF76E</color>
+    <color name="gauge_poor">#AC1600</color>
+    <color name="black">#FF000000</color>
+    <color name="blackOlive">#3B3C36</color>
+    <color name="blackNight">#111111</color>
+    <color name="on">#007FFF</color>
+
+    <color name="beige">#F5F5DC</color>
+    <color name="blue">#1F75FE</color>
+    <color name="columbiaBlue">#B9D9EB</color>
+    <color name="officeGreen">#008000</color>
+    <color name="gunmetal">#555555</color>
+    <color name="green">#14EB1E</color>
+
+</resources>

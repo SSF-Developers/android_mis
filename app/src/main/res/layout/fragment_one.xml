@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/selectComplexTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectComplex"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_H1"
+        android:textColor="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        />
+
+
+    <TextView
+        android:id="@+id/stateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="State"
+        app:layout_constraintTop_toBottomOf="@id/selectComplexTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/selectState"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:textColorHint="@color/grey_400"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stateLabel"
+        android:background="@drawable/text_border_selector"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/ic_arrow_drop_down" />
+
+
+
+    <TextView
+        android:id="@+id/selectStateError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/design_default_color_error"
+        android:text="*Select State"
+        app:layout_constraintTop_toBottomOf="@id/selectState"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/districtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="District"
+        app:layout_constraintTop_toBottomOf="@id/selectStateError"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/selectDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:textColorHint="@color/grey_400"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/districtLabel"
+        android:background="@drawable/text_border_selector"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/ic_arrow_drop_down"
+        />
+
+    <TextView
+        android:id="@+id/selectDistrictError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/design_default_color_error"
+        android:text="*Select District"
+        app:layout_constraintTop_toBottomOf="@id/selectDistrict"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/cityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="City"
+        app:layout_constraintTop_toBottomOf="@id/selectDistrictError"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/selectCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:textColorHint="@color/grey_400"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cityLabel"
+        android:background="@drawable/text_border_selector"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/ic_arrow_drop_down"
+        />
+
+    <TextView
+        android:id="@+id/selectCityError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/design_default_color_error"
+        android:text="*Select City"
+        app:layout_constraintTop_toBottomOf="@id/selectCity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/complexLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Complex"
+        app:layout_constraintTop_toBottomOf="@id/selectCityError"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/selectComplex"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:textColorHint="@color/grey_400"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/complexLabel"
+        android:background="@drawable/text_border_selector"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/ic_arrow_drop_down"
+        />
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/creteNewComplexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/selectComplex"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/create_new_complex"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/next"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="12dp"
+        tools:targetApi="lollipop"
+        android:src="@drawable/right"
+        app:tint="@color/white"
+        app:backgroundTint="@color/primary"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

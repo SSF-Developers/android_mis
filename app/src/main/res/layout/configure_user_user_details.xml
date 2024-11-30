@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <ScrollView style="@style/Container.FullWidth"
+        android:orientation="vertical">
+
+
+        <LinearLayout style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/Container.FullWidth"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormField.Label"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/FormField.Default" />
+
+                <TextView
+                    android:id="@+id/nameErr"
+                    style="@style/FormField.Error" />
+
+                <Space
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_x_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Container.FullWidth"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormField.Label"
+                    android:text="Gender" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/FormField.Dropdown" />
+
+                <TextView
+                    android:id="@+id/genderErr"
+                    style="@style/FormField.Error" />
+
+                <Space
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_x_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Container.FullWidth"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormField.Label"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/FormField.Password" />
+
+                <TextView
+                    android:id="@+id/passwordErr"
+                    style="@style/FormField.Error" />
+
+                <Space
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_x_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Container.FullWidth"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormField.Label"
+                    android:text="Repeat Password" />
+
+                <EditText
+                    android:id="@+id/repeatPassword"
+                    style="@style/FormField.Password" />
+
+                <TextView
+                    android:id="@+id/repeatPasswordErr"
+                    style="@style/FormField.Error" />
+
+                <Space
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_x_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Container.FullWidth"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormField.Label"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/address"
+                    style="@style/FormField.TextArea" />
+
+                <TextView
+                    android:id="@+id/addressErr"
+                    style="@style/FormField.Error" />
+
+                <Space
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_x_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

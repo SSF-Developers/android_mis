@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page"
+    android:orientation="vertical">
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_normal" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Container.FullWidth"
+        app:tabContentStart="56dp"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/text_border_default"
+        app:tabTextColor="@color/grey_300"
+        app:tabMode="scrollable"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Member Profile" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Member Access" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_large" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        style="@style/FormContainer.Normal" />
+
+</LinearLayout>

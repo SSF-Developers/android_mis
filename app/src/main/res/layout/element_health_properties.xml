@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:layout_margin="@dimen/margin_normal">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintRight_toLeftOf="@+id/label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/ic_status_fault"/>
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/Label.FormValue"
+        android:layout_width="wrap_content"
+        android:text="User Name "
+        android:paddingLeft="@dimen/text_size_x_small"
+        app:layout_constraintRight_toLeftOf="@+id/colon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/colon"
+        style="@style/Label.FormNameSm"
+        android:text=" : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".4" />
+
+    <TextView
+        android:id="@+id/value"
+        style="@style/Label.FormName"
+        android:layout_width="wrap_content"
+        android:text="ssf_developer"
+        app:layout_constraintLeft_toRightOf="@+id/colon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

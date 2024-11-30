@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Cards.HealthCard">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_details"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/Header.Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:text="Active Tickets"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/raiseTicket"/>
+
+    <android.widget.Button
+        android:id="@+id/raiseTicket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/Button.CardAction"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="Raise Ticket" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/complexGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raiseTicket"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <include
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/margin_normal"
+        layout="@layout/banner_no_active_ticket"
+        android:id="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/raiseTicket"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

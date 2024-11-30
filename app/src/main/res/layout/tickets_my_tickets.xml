@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_normal">
+
+    <Button
+        android:id="@+id/raiseTicket"
+        style="@style/Container.Action.Negative.XSmall"
+        android:text="Raise New Ticket"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/statusSelectionContainer"
+        style="@style/Container.WrapContent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/raiseTicket"
+        app:layout_constraintBottom_toBottomOf="@+id/raiseTicket">
+
+        <TextView
+            android:id="@+id/durationLabel"
+            style="@style/Label.Card"
+            android:text="Status:" />
+
+        <Spinner
+            android:id="@+id/statusSelection"
+            style="@style/Label.Spinner"
+            android:background="@color/white" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/vic_drop_down" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raiseTicket"
+        android:paddingBottom="@dimen/margin_large" />
+
+    <include
+        android:id="@+id/noDataContainer"
+        layout="@layout/element_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:paddingBottom="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raiseTicket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

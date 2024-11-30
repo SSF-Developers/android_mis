@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:padding="@dimen/margin_x_small"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/timeStamp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/submit"
+            app:layout_constraintBottom_toBottomOf="@+id/submit"
+            style="@style/Label.Card"
+            android:text=" "/>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/submit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Submit"
+            style="@style/Container.Action.Positive.Small"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/noDataContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:background="@drawable/no_data"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/noDataIcon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ic_status_feature_not_available"/>
+            <TextView
+                android:id="@+id/noDataLabel"
+                android:layout_marginLeft="@dimen/text_size_x_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Label.ERR"
+                android:text=""
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

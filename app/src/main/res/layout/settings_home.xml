@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        android:layout_marginTop="@dimen/margin_x_small"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Container.FullWidth"
+        app:tabContentStart="112dp"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/text_border_default"
+        app:tabTextColor="@color/grey_300"
+        app:tabMode="scrollable">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="UCEMS Config" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="CMS Config" />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="ODS Config" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

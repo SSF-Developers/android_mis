@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page">
+
+    <LinearLayout
+        android:id="@+id/container"
+        style="@style/FormContainer.Normal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_above="@+id/space"
+        android:layout_alignParentTop="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:id="@+id/summaryContainer"
+            style="@style/Container.FullWidth"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Container.FullWidth">
+                <TextView
+                    android:id="@+id/countStates"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Value"
+                    android:text="0"/>
+                <TextView
+                    android:id="@+id/countStatesColon"
+                    app:layout_constraintRight_toLeftOf="@+id/countStates"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text=" : "/>
+                <TextView
+                    app:layout_constraintRight_toLeftOf="@+id/countStatesColon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text="States "/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Container.FullWidth">
+                <TextView
+                    android:id="@+id/countDistricts"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Value"
+                    android:text="0"/>
+                <TextView
+                    android:id="@+id/countDistrictsColon"
+                    app:layout_constraintRight_toLeftOf="@+id/countDistricts"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text=" : "/>
+                <TextView
+                    app:layout_constraintRight_toLeftOf="@+id/countDistrictsColon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text="Districts "/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Container.FullWidth">
+                <TextView
+                    android:id="@+id/countCities"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Value"
+                    android:text="0"/>
+                <TextView
+                    android:id="@+id/countCitiesColon"
+                    app:layout_constraintRight_toLeftOf="@+id/countCities"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text=" : "/>
+                <TextView
+                    app:layout_constraintRight_toLeftOf="@+id/countCitiesColon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text="Cities "/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Container.FullWidth">
+                <TextView
+                    android:id="@+id/countComplexes"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Value"
+                    android:text="0"/>
+                <TextView
+                    android:id="@+id/countComplexesColon"
+                    app:layout_constraintRight_toLeftOf="@+id/countComplexes"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text=" : "/>
+                <TextView
+                    app:layout_constraintRight_toLeftOf="@+id/countComplexesColon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Label.Name"
+                    android:text="Complexes "/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_normal"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/container"
+        android:layout_marginTop="-32dp"
+        style="@style/FAB_LA" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_alignParentBottom="true"
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_x_large" />
+</RelativeLayout>

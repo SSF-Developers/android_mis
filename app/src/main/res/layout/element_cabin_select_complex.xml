@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/shadow_margin"
+    android:background="@drawable/surface_white_sheet"
+    android:padding="@dimen/padding_form_basic"
+    android:elevation="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/H3"
+        android:text="Select Complex" />
+
+    <LinearLayout
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/stateLabel"
+            android:text="State"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/stateName"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/stateNameErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/districtLabel"
+            android:text="District"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/districtName"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/districtNameErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/cityLabel"
+            android:text="City"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/cityName"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/cityNameErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FormRowContainer">
+        <TextView
+            android:id="@+id/complexNameLabel"
+            android:text="Complex"
+            style="@style/LabelField" />
+        <LinearLayout
+            style="@style/FormFieldContainer">
+            <TextView
+                android:id="@+id/complexName"
+                style="@style/FormField_DropDown"/>
+            <TextView
+                android:id="@+id/complexNameErr"
+                android:text=""
+                style="@style/ErrorField"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

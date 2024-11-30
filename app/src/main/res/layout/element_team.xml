@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/FormContainer.List"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:id="@+id/roleInitialsCont"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/ImageHolder.RoleIcon">
+        <TextView
+            android:id="@+id/roleInitials"
+            style="@style/Label.RoleInitials"
+            android:text="S.A." />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5508685"
+        app:layout_constraintLeft_toRightOf="@+id/roleInitialsCont"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/roleName"
+        app:layout_constraintTop_toBottomOf="@+id/roleInitialsCont"
+        app:layout_constraintLeft_toLeftOf="@+id/roleInitialsCont"
+        app:layout_constraintRight_toRightOf="@+id/roleInitialsCont"
+        android:maxLines="2"
+        android:layout_width="0dp"
+        android:gravity="center"
+        style="@style/Label.Name"
+        android:text="Super Admin" />
+
+    <LinearLayout
+        android:id="@+id/userNameCont"
+        app:layout_constraintLeft_toRightOf="@+id/roleInitialsCont"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/roleInitialsCont"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:orientation="vertical">
+        <TextView
+            style="@style/Label.ListName"
+            android:text="User Name:" />
+        <TextView
+            android:id="@+id/userName"
+            style="@style/Label.ListValue"
+            android:text="User Details" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/assignmentTypeCont"
+        app:layout_constraintLeft_toRightOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roleInitialsCont"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/Label.ListName"
+            android:text="Organisation:" />
+        <TextView
+            android:id="@+id/organisation"
+            style="@style/Label.ListValue"
+            android:text="User Details" />
+
+
+    </LinearLayout>
+
+
+<!--    <ImageView-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/roleInitialsCont"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/roleName"-->
+<!--        android:background="@drawable/ic_details"-->
+<!--        style="@style/ImageHolder.DetailsIcon"/>-->
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/assignmentTypeCont"
+        app:layout_constraintTop_toBottomOf="@+id/assignmentTypeCont"
+        app:layout_constraintRight_toRightOf="@+id/assignmentTypeCont"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/Label.ListName"
+            android:text="Status:" />
+        <TextView
+            android:id="@+id/status"
+            style="@style/Label.ListValue"
+            android:text="User Details" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Container.WrapContent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/userNameCont"
+        app:layout_constraintTop_toBottomOf="@+id/userNameCont">
+
+        <TextView
+            style="@style/Label.ListName"
+            android:layout_gravity="left"
+            android:text="Created:" />
+
+        <TextView
+            android:id="@+id/created"
+            style="@style/Label.ListValue"
+            android:layout_gravity="right"
+            android:text="User Details" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

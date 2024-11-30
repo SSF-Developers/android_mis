@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/complex"
+        android:enabled="true"
+        android:icon="@drawable/ic_toilet"
+        android:title="Complex"/>
+    <item
+        android:id="@+id/dummy"
+        android:enabled="true"
+        android:icon="@drawable/ic_toilet"
+        android:title=""/>
+    <item
+        android:id="@+id/incidents"
+        android:enabled="true"
+        android:icon="@drawable/ic_incident"
+        android:title="Incidents"/>
+    <item
+        android:id="@+id/reports"
+        android:enabled="true"
+        android:icon="@drawable/ic_report"
+        android:title="Reports"/>
+</menu>

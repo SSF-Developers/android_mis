@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/box_health_card">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/primary"
+            android:padding="@dimen/margin_small">
+
+            <LinearLayout
+                android:id="@+id/statusIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/surface_white_sheet"
+                android:elevation="4dp"
+                android:padding="2dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/ic_toilet" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Label.HealthCard"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="AWS Commissioning"
+                app:layout_constraintBottom_toBottomOf="@+id/statusIcon"
+                app:layout_constraintLeft_toRightOf="@+id/statusIcon"
+                app:layout_constraintTop_toTopOf="@+id/statusIcon"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/surface_white_sheet"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_small"
+            android:stateListAnimator="@animator/elevate">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/statusIc"
+                    app:layout_constraintTop_toTopOf="@+id/ticketId"
+                    app:layout_constraintBottom_toBottomOf="@+id/ticketId"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:background="@color/fwc" />
+
+                <TextView
+                    android:id="@+id/ticketId"
+                    style="@style/Label.TicketValue.B"
+                    android:layout_width="0dp"
+                    android:text="SMT-21-A-1000"
+                    android:textSize="@dimen/text_size_x_small"
+                    app:layout_constraintLeft_toRightOf="@+id/statusIc"
+                    android:layout_marginLeft="@dimen/margin_x_small"
+                    app:layout_constraintRight_toLeftOf="@+id/statusCont"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/titleTicket"
+                    style="@style/Label.TicketValue.N"
+                    android:textSize="@dimen/text_size_x_small"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:text="The florr clean operation problem"
+                    app:layout_constraintLeft_toLeftOf="@+id/statusIc"
+                    app:layout_constraintRight_toLeftOf="@+id/statusCont"
+                    app:layout_constraintTop_toBottomOf="@+id/ticketId" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/statusCont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/statusLabel"
+                        style="@style/Label.TicketValue.S"
+                        android:text="Status:"
+                        android:textSize="@dimen/text_size_x_small"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        style="@style/Label.TicketValue.I"
+                        android:text="Resolved"
+                        android:textSize="@dimen/text_size_x_small"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/statusLabel" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/selectComplexTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectComplex"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_H1"
+        android:textColor="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectComplexTV"
+        app:endIconTint="@color/black"
+        android:id="@+id/selectStateLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:hint="@string/state"
+        android:textColorHint="@color/blackNight"
+        app:boxStrokeColor="@color/button_default"
+        app:hintTextColor="@color/button_default"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/selectStateTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+            android:tooltipText="@string/complex"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectStateLayout"
+        app:endIconTint="@color/black"
+        android:id="@+id/selectDistrictLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:hint="@string/district"
+        android:textColorHint="@color/blackNight"
+        app:boxStrokeColor="@color/button_default"
+        app:hintTextColor="@color/button_default"
+
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/selectDistrictTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectDistrictLayout"
+        app:endIconTint="@color/black"
+        android:id="@+id/selectCtiyLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:hint="@string/city"
+        android:textColorHint="@color/blackNight"
+        app:boxStrokeColor="@color/button_default"
+        app:hintTextColor="@color/button_default"
+
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/selectCityTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectCtiyLayout"
+        app:endIconTint="@color/black"
+        android:id="@+id/selectComplexLayout"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        android:hint="@string/complex"
+        android:textColorHint="@color/blackNight"
+        app:boxStrokeColor="@color/button_default"
+        app:hintTextColor="@color/button_default"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/selectComplexTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundTint="@color/whiteSmoke"
+            android:textColor="#1B1A1A"
+            android:inputType="none"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/creteNewComplexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|end"
+        android:contentDescription="@string/create_new_complex"
+        android:text="@string/complex"
+        app:icon="@drawable/icroundplus"
+        app:backgroundTint="@color/button_default"
+        app:layout_constraintTop_toBottomOf="@id/selectComplexLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/next"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="12dp"
+        tools:targetApi="lollipop"
+        android:src="@drawable/right"
+        app:tint="@color/white"
+        app:backgroundTint="@color/primary"
+        />
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

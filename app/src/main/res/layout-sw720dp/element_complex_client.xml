@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/surface_white_sheet"
+    android:layout_margin="10dp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:text="Client Details"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/clientNameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:hint="Client Name"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/button_default"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/button_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:endIconDrawable="@drawable/icroundplus"
+            app:endIconTint="@color/black"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/clientName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:inputType="none"
+                android:backgroundTint="@color/whiteSmoke"
+                android:layout_weight="1"
+                android:textColor="#1B1A1A"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoRecyclerView"
+            app:layout_constraintTop_toBottomOf="@id/clientNameLayout"
+            app:layout_constraintBottom_toTopOf="@id/billingGroupLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="22dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/logoError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/alert"
+            app:layout_constraintStart_toStartOf="@id/logoRecyclerView"
+            app:layout_constraintTop_toBottomOf="@id/logoRecyclerView"
+            android:text="@string/required"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/billingGroupLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:hint="Billing Group"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/button_default"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/button_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoRecyclerView"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:endIconDrawable="@drawable/icroundplus"
+            app:endIconTint="@color/black"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/billingGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:inputType="none"
+                android:backgroundTint="@color/whiteSmoke"
+                android:layout_weight="1"
+                android:textColor="#1B1A1A"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dateLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Date"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/button_default"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/button_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/billingGroupLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:endIconMode="none"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:inputType="none"
+                android:backgroundTint="@color/whiteSmoke"
+                android:layout_weight="1"
+                android:textColor="#1B1A1A"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

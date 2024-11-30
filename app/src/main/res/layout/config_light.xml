@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/Label.Card.La"
+        android:layout_margin="@dimen/margin_large"
+        android:gravity="center"
+        android:text="" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_small"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:background="@drawable/surface_white_sheet">
+        <include
+            android:id="@+id/scopeCont"
+            layout="@layout/element_config_scope"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_small"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:background="@drawable/surface_white_sheet">
+
+
+
+        <include
+            android:id="@+id/enabledCont"
+            layout="@layout/element_properties_spinner_sm"/>
+
+        <include
+            android:id="@+id/offCont"
+            layout="@layout/element_properties_timer_sm"/>
+
+        <include
+            android:id="@+id/onCont"
+            layout="@layout/element_properties_timer_sm"/>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/Container.Action.Positive.XSmall"
+            android:layout_margin="@dimen/margin_small"
+            android:text="Commit Changes"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridContainer" />
+    </LinearLayout>
+
+</LinearLayout>

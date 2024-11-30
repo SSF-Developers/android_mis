@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="220dp"
+    android:layout_height="160dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/box_health_card">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/primary"
+            android:padding="@dimen/margin_small">
+
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/statusIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:padding="2dp"
+                android:background="@drawable/surface_white_sheet">
+                <ImageView
+                    android:background="@drawable/ic_toilet"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_centerVertical="true"
+                app:layout_constraintLeft_toRightOf="@+id/statusIcon"
+                app:layout_constraintTop_toTopOf="@+id/statusIcon"
+                app:layout_constraintBottom_toBottomOf="@+id/statusIcon"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:id="@+id/title"
+                style="@style/Label.HealthCard"
+                android:text="AWS Commissioning"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:stateListAnimator="@animator/elevate"
+        android:background="@drawable/surface_white_sheet">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/mwcCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@color/mwc" />
+
+            <TextView
+                android:id="@+id/mwc"
+                style="@style/Label.LegendLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x_small"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fwcCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@color/fwc" />
+
+            <TextView
+                android:id="@+id/fwc"
+                style="@style/Label.LegendLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x_small"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pwcCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@color/pwc" />
+
+            <TextView
+                android:id="@+id/pwc"
+                style="@style/Label.LegendLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x_small"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/murCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@color/mur" />
+
+            <TextView
+                android:id="@+id/mur"
+                style="@style/Label.LegendLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x_small"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bwtCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@color/bwt" />
+
+            <TextView
+                android:id="@+id/bwt"
+                style="@style/Label.LegendLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x_small"
+                android:text="" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

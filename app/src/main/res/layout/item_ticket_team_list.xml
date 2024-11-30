@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:padding="@dimen/margin_x_small"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/userName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/Label.TicketValue.I"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/userRole"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/Label.TicketValue.S"
+        android:text="Airtel-city-center" />
+
+    <RadioButton
+        app:layout_constraintTop_toTopOf="@+id/userName"
+        app:layout_constraintBottom_toBottomOf="@+id/userRole"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

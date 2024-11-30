@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/shadow_margin"
+    android:background="@drawable/surface_white_sheet"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_form_basic">
+
+    <TextView
+        style="@style/H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Details" />
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/addressLabel"
+            style="@style/LabelField"
+            android:text="Address" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/FormFieldLarge" />
+
+            <TextView
+                android:id="@+id/addressErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/latLabel"
+            style="@style/LabelField"
+            android:text="Geo Location" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SubLabelField"
+                    android:text="Latitude" />
+
+                <TextView
+                    android:id="@+id/lat"
+                    style="@style/FormField" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SubLabelField"
+                    android:text="Longitude" />
+
+                <TextView
+                    android:id="@+id/lon"
+                    style="@style/FormField" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/clientNameLabel"
+            style="@style/LabelField"
+            android:text="Client Name" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/clientName"
+                style="@style/FormField" />
+
+            <TextView
+                android:id="@+id/clientNameErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/billingGroupLabel"
+            style="@style/LabelField"
+            android:text="Billing Group" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/billingGroup"
+                style="@style/FormField" />
+
+            <TextView
+                android:id="@+id/billingGroupErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/FormRowContainer">
+
+        <TextView
+            android:id="@+id/dateLabel"
+            style="@style/LabelField"
+            android:text="Date" />
+
+        <LinearLayout style="@style/FormFieldContainer">
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/FormField" />
+
+            <TextView
+                android:id="@+id/dateErr"
+                style="@style/ErrorField"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+

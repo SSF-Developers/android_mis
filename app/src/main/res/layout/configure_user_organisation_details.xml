@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Container.FullWidth"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormField.Label"
+                android:text="Organisation Name" />
+
+            <TextView
+                android:id="@+id/organisation"
+                style="@style/FormField.Default" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_large" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormField.Label"
+                android:text="Client Name" />
+
+            <TextView
+                android:id="@+id/client"
+                style="@style/FormField.Default" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_large" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormField.Label"
+                android:text="Role" />
+
+            <TextView
+                android:id="@+id/role"
+                style="@style/FormField.Default" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_large" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

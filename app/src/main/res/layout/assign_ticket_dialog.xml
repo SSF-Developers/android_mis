@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.TicketDialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/banner_surface_rounded_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/Header.WhiteBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Ticket"
+            android:layout_marginLeft="@dimen/margin_large"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/surface_circle_white"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_cross"
+                />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/ticketDetailsContainer"
+        style="@style/FormContainer.Normal"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/actionDescription"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                style="@style/Label.TicketValue.N"
+                android:text="Ticket Details" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/selectUSer"
+                style="@style/AppTheme.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_user_name"
+                app:startIconTint="@color/primary">
+
+                <AutoCompleteTextView
+                    android:id="@+id/selectUSerAct"
+                    style="@style/FormField.TextInputEditText"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/comment"
+                style="@style/Widget.App.TextInputLayout"
+                android:hint="Description"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/FormField.TextArea" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmAction"
+                style="@style/Widget.App.TextInputLayout"
+                android:hint="Confirm Action"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:text=""
+                    style="@style/FormField.ValidateAction" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/margin_normal"
+        android:id="@+id/submit"
+        style="@style/Container.Action.Positive"
+        android:text="Submit Action"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticketDetailsContainer"/>
+    <Space
+        app:layout_constraintTop_toBottomOf="@+id/submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_normal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Label.TicketValue.IB"
+    android:layout_width="wrap_content"
+    android:paddingLeft="@dimen/margin_x_small"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_small"
+    android:background="@color/white"
+    android:paddingRight="1dp"
+    android:text="SELECT "
+    />

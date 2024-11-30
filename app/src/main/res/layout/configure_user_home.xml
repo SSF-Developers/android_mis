@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/configure_user_appbar" />
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_normal" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabContentStart="56dp"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/text_border_default"
+        app:tabTextColor="@color/grey_300"
+        app:tabMode="scrollable">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organisation" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Details" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communication " />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Space
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/margin_large" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        style="@style/FormContainer.Normal"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

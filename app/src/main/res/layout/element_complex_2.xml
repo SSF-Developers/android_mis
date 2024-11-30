@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Container.FullWidth"
+        android:paddingLeft="@dimen/margin_x_small"
+        android:paddingTop="@dimen/margin_x_small"
+        android:paddingBottom="@dimen/margin_x_small">
+
+        <ImageView
+            android:id="@+id/icon"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/ic_not_selected"
+            style="@style/ImageHolder.TreeIcon"/>
+
+        <TextView
+            android:id="@+id/title"
+            app:layout_constraintLeft_toRightOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/recursive"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginLeft="1dp"
+            style="@style/AccessTree.Complex"
+            android:text="User Details" />
+
+        <ImageView
+            android:id="@+id/recursive"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/surface_circle_white"
+            style="@style/CheckBox.Small" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

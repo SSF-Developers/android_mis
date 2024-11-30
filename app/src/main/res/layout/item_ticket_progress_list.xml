@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/FormContainer.List.XSmallPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/eventLabel"
+        style="@style/Label.TicketValue.I"
+        android:text="Event: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eventDetailsContainer"
+        app:layout_constraintBottom_toBottomOf="@+id/eventDetailsContainer"
+        app:layout_constraintVertical_bias=".2"/>
+    <TextView
+        android:id="@+id/event"
+        style="@style/Label.TicketValue.B"
+        android:text="SMT-21-A-1000"
+        app:layout_constraintLeft_toRightOf="@+id/eventLabel"
+        app:layout_constraintTop_toTopOf="@+id/eventDetailsContainer"
+        app:layout_constraintBottom_toBottomOf="@+id/eventDetailsContainer"
+        app:layout_constraintVertical_bias=".2"/>
+    <TextView
+        android:id="@+id/eventDescription"
+        style="@style/Label.TicketValue.N"
+        android:layout_width="0dp"
+        android:text="SMT-21-A-1000"
+        app:layout_constraintLeft_toLeftOf="@+id/eventLabel"
+        app:layout_constraintRight_toLeftOf="@+id/eventDetailsContainer"
+        android:layout_marginRight="@dimen/margin_small"
+        app:layout_constraintTop_toBottomOf="@+id/event"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/eventDetailsContainer"
+        style="@style/Container.WrapContent"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/Label.TicketValue.S"
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:text="9th Feb, 2020" />
+
+        <TextView
+            android:id="@+id/userRole"
+            style="@style/Label.TicketValue.S"
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:text="Client Admin: dev_000000" />
+
+        <TextView
+            android:id="@+id/userName"
+            style="@style/Label.TicketValue.S"
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:text="Client Admin: dev_000000" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commentLabel"
+        style="@style/Label.TicketValue.B"
+        android:text="Comments"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventDescription"
+        android:layout_marginTop="@dimen/margin_normal"/>
+    <TextView
+        android:id="@+id/comment"
+        style="@style/FormField"
+        android:padding="@dimen/margin_normal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_x_small"
+        android:text="Comments"
+        app:layout_constraintLeft_toLeftOf="@+id/commentLabel"
+        app:layout_constraintTop_toBottomOf="@+id/commentLabel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

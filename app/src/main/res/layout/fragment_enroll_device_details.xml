@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ui.management.fargments.EnrollDeviceDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        >
+
+
+        <TextView
+            android:id="@+id/siteNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/siteName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/devideDetailsTv" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/siteNameEditTextLayout"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintStart_toStartOf="@id/siteNameTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/siteNameTv"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/enterprise"
+            app:startIconTint="@color/black"
+            app:helperText="@string/required"
+            app:helperTextTextColor="@color/alert"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            android:hint="@string/siteName"
+            app:hintAnimationEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/siteNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/siteName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/divider"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/clientNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/clientName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/siteNameEditTextLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/clientNameEtLayout"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintStart_toStartOf="@id/siteNameTv"
+            app:layout_constraintTop_toBottomOf="@id/clientNameTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            app:startIconDrawable="@drawable/enterprise"
+            app:endIconMode="clear_text"
+            app:helperText="@string/required"
+            app:helperTextTextColor="@color/alert"
+            app:startIconTint="@color/black"
+            app:endIconTint="@color/black"
+            android:hint="@string/siteName"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/clientNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/clientName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/divider" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/cabinTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cabinType"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clientNameEtLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cabinTypeEditTextLayout"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeErrorColor="@color/alert"
+            app:layout_constraintStart_toStartOf="@id/siteNameTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cabinTypeTv"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:startIconDrawable="@drawable/enterprise"
+            app:startIconTint="@color/black"
+            app:helperText="@string/required"
+            app:helperTextTextColor="@color/alert"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            android:hint="@string/siteName"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cabinTypeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cabinType"
+                android:textColor="@color/black"
+                android:textColorHint="@color/divider" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/siteAddressTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/siteAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cabinTypeEditTextLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/siteAddress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="86dp"
+            android:hint="@string/siteAddress"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeErrorColor="@color/alert"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:helperText="@string/required"
+            app:helperTextTextColor="@color/alert"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/siteNameTv"
+            app:layout_constraintTop_toBottomOf="@id/siteAddressTv"
+            app:startIconDrawable="@drawable/enterprise"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/siteAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/siteAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/divider" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/devideDetailsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/deviceDetails"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:textColor="#040404"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

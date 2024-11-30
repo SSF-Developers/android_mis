@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    style="@style/Container.WrapContent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/timer"
+        layout="@layout/element_properties_timer"/>
+
+    <include
+        android:id="@+id/action"
+        layout="@layout/element_properties_spinner"/>
+
+    <include
+        android:id="@+id/override"
+        layout="@layout/element_properties_spinner"/>
+</LinearLayout>
+

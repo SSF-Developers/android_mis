@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners"
+    android:layout_margin="12dp"
+    android:id="@+id/layout"
+    android:animateLayoutChanges="true"
+    >
+
+    <TextView
+        android:id="@+id/packageNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/packageName"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/installTypeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/installType"
+        android:textColor="#131313"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/packageNameTv"
+        app:layout_constraintBottom_toTopOf="@id/autoUpdateTv"
+        />
+
+
+    <TextView
+        android:id="@+id/autoUpdateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/autoUpdateMode"
+        android:textColor="#131313"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/installTypeTv"
+        app:layout_constraintBottom_toTopOf="@id/defaultPermissionPolicyTv"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/defaultPermissionPolicyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/defaultPermissionPolicy"
+        android:textColor="#131313"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoUpdateTv"
+        app:layout_constraintBottom_toTopOf="@id/userControlSettingTv"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/userControlSettingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/userControlSettings"
+        android:textColor="#131313"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/defaultPermissionPolicyTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginBottom="18dp"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/deleteAppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_small"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="18dp"
+        />
+
+    <ImageButton
+        android:id="@+id/editAppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit_square_small"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@id/deleteAppButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        />
+
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/isKioskApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="1dp"
+        app:useMaterialThemeColors="true"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

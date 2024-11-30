@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/Page.FullWidth"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_tool_bar" />
+
+
+    <LinearLayout
+        style="@style/FormContainer.Normal"
+        android:layout_margin="@dimen/margin_large">
+
+        <LinearLayout
+            android:id="@+id/details"
+            style="@style/Container.FullWidth"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/id"
+                android:gravity="center"
+                style="@style/FormField.Default" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_large"/>
+
+            <Button
+                android:id="@+id/sendCode"
+                style="@style/Button.FullWidth"
+                android:text="Send code" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verification"
+            style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small"/>
+            <TextView
+                android:id="@+id/message"
+                style="@style/FormField.Alert"
+                android:text=""
+                />
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small"/>
+
+            <EditText
+                android:id="@+id/code"
+                style="@style/FormField.Default"
+                android:hint="Enter verification code"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal"/>
+
+            <Button
+                android:id="@+id/verify"
+                style="@style/Button.FullWidth"
+                android:text="Verify"/>\
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

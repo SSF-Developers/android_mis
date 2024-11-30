@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Container.FullWidth.Card"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/Container.Header">
+
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/ImageHolder.TreeIcon"
+                android:src="@drawable/ic_toilet"
+                app:layout_constraintBottom_toBottomOf="@+id/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/AccessTree.State_SM"
+                android:layout_marginLeft="1dp"
+                android:text="User Details"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/icon"
+                app:layout_constraintRight_toLeftOf="@+id/recursive"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/subTitle"
+                style="@style/AccessTree.Complex_SM"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="@dimen/text_size_small"
+                android:text="Turn on unit lights for 10 seconds"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/icon"
+                app:layout_constraintRight_toLeftOf="@+id/submit"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            style="@style/Container.FillParent.WithHorizontalPadding"
+            android:orientation="vertical">
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <LinearLayout
+                style="@style/Container.FullWidth"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/gridContainer"
+                    style="@style/Container.FullWidth"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:paddingTop="@dimen/margin_small"
+                    android:paddingBottom="@dimen/margin_small">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/header"
+                            layout="@layout/element_header_date_data" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/dataGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

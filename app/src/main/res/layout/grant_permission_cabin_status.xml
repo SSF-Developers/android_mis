@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/usageProfileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Cabin Status"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/collectionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/usageProfileTextView"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="177dp"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchCarbonMonoxide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Carbon Monoxide"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchMethane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Methane"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchAmmonia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ammonia"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchLuminous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Luminous"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:layout_marginTop="@dimen/page_vertical_margin_toolbar">
+
+    <ScrollView
+        app:layout_constraintBottom_toTopOf="@+id/padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/scroll"
+        style="@style/Container.FullWidth"
+        android:layout_height="0dp"
+        android:layout_above="@+id/padding">
+
+        <LinearLayout
+            style="@style/Page.FullWidth"
+            android:orientation="vertical">
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                style="@style/FormContainer.Normal"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout style="@style/Container.FullWidth"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Header.Form"
+                        android:text="User Details" />
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/userName"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="User Name"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:errorEnabled="true"
+                        app:startIconDrawable="@drawable/ic_user_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/FormField.TextInputEditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/password"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="Temporary Password"
+                        app:endIconMode="password_toggle"
+                        app:errorEnabled="true"
+                        app:startIconDrawable="@drawable/ic_user_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/FormField.TextInputEditText"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/role"
+                        style="@style/AppTheme.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="User Role"
+                        app:errorEnabled="true"
+                        app:startIconDrawable="@drawable/ic_user_name"
+                        app:startIconTint="@color/primary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/roleAct"
+                            style="@style/FormField.TextInputEditText"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_x_large" />
+
+            <FrameLayout
+                android:id="@+id/container1"
+                style="@style/FormContainer.Normal"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/Container.FullWidth"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Header.Form"
+                        android:text="Client Selection" />
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/client"
+                        style="@style/AppTheme.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Client"
+                        app:errorEnabled="true"
+                        app:startIconDrawable="@drawable/ic_user_name"
+                        app:startIconTint="@color/primary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/clientAct"
+                            style="@style/FormField.TextInputEditText"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+<!-- rahul karn-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/organisation"-->
+<!--                        style="@style/Widget.App.TextInputLayout"-->
+<!--                        android:hint="Organisation"-->
+<!--                        app:errorEnabled="true"-->
+<!--                        app:startIconDrawable="@drawable/ic_user_name">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            style="@style/FormField.TextInputEditText"-->
+<!--                            android:focusable="false"/>-->
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+                </LinearLayout>
+            </FrameLayout>
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Space
+        app:layout_constraintBottom_toTopOf="@+id/container2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/padding"
+        style="@style/Container.FullWidth"
+        android:layout_height="0dp" />
+
+    <FrameLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/margin_normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/container2"
+        style="@style/FormContainer.Submit"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <android.widget.Button
+            android:id="@+id/login"
+            style="@style/Button.FullWidth"
+            android:text="Submit Request" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

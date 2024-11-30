@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:padding="@dimen/margin_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/timeIntervalContainer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Container.WrapContent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/durationLabel"
+            style="@style/Label.Card"
+            android:text="Duration:"/>
+
+        <Spinner
+            android:id="@+id/timeInterval"
+            style="@style/Label.Spinner"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/vic_drop_down"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/gridContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeIntervalContainer"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/titleContainer"
+                layout="@layout/element_cabin_profile_header"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grid"
+                android:paddingBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/noDataContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeIntervalContainer"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:background="@drawable/no_data"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/noDataIcon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ic_status_feature_not_available"/>
+
+
+            <TextView
+                android:id="@+id/noDataLabel"
+                android:layout_marginLeft="@dimen/text_size_x_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Label.ERR"
+                android:text=""
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

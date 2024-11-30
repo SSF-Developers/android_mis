@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/selection_tree_tool_bar" />
+
+
+    <LinearLayout
+        style="@style/Container.FullWidth"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_small"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Container.Action.Positive.XSmall"
+                android:layout_gravity="center_horizontal"
+                android:text="Commit Changes"
+                app:layout_constraintBottom_toBottomOf="@+id/summaryContainer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/summaryContainer" />
+
+            <LinearLayout
+                android:id="@+id/summaryContainer"
+                style="@style/Container.WrapContent"
+                android:orientation="vertical"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include
+                    android:id="@+id/states"
+                    layout="@layout/element_name_value" />
+
+                <include
+                    android:id="@+id/districts"
+                    layout="@layout/element_name_value" />
+
+                <include
+                    android:id="@+id/cities"
+                    layout="@layout/element_name_value" />
+
+                <include
+                    android:id="@+id/complexes"
+                    layout="@layout/element_name_value" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Space
+            android:id="@+id/space"
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summaryContainer" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space" />
+
+    </LinearLayout>
+</LinearLayout>

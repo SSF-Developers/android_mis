@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners">
+
+    <TextView
+        android:id="@+id/scheduleReportTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Schedule Report"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Yes"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checked="true"
+            android:text="No"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/reportDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/reportDetails"
+        android:textColor="@color/grey_150"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+    <TextView
+        android:id="@+id/rateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Rate"
+        android:textColor="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportDetails" />
+
+    <EditText
+        android:id="@+id/rateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:ems="6"
+        android:enabled="false"
+        android:hint="Days"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportDetails" />
+
+    <TextView
+        android:id="@+id/rateErrorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="ERROR"
+        android:textColor="@color/alert"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/rateEditText"
+        app:layout_constraintTop_toBottomOf="@id/rateEditText" />
+
+
+    <TextView
+        android:id="@+id/scheduleReportDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/scheduleDetails"
+        android:textColor="@color/grey_150"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rateErrorTV"
+
+        />
+
+    <TextView
+        android:id="@+id/reportDurationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Report Duration"
+        android:textColor="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scheduleReportDetails" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:entries="@array/reportDays"
+        android:popupBackground="@color/white"
+        android:theme="@style/AppTheme.ExposedDropdownMenu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scheduleReportDetails"
+
+        />
+
+    <TextView
+        android:id="@+id/scheduleStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Schedule start time"
+        android:textColor="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportDurationTV" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scheduleStartDatePickerButton"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/border"
+        android:enabled="false"
+        android:hint="Pick start date"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+    <TextView
+        android:id="@+id/startDateErrorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="ERROR"
+        android:textColor="@color/alert"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/scheduleStartDatePickerButton"
+        app:layout_constraintTop_toBottomOf="@id/scheduleStartDatePickerButton" />
+
+
+    <TextView
+        android:id="@+id/scheduleEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Schedule end time"
+        android:textColor="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startDateErrorTV" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scheduleEndDatePickerButton"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/border"
+        android:enabled="false"
+        android:hint="Pick end date"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_150"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startDateErrorTV" />
+
+    <TextView
+        android:id="@+id/endDateErrorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="ERROR"
+        android:textColor="@color/alert"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/scheduleEndDatePickerButton"
+        app:layout_constraintTop_toBottomOf="@id/scheduleEndDatePickerButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

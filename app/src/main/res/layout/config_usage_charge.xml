@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Cards.Normal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/Header.Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Config"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Tab.Card"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        app:layout_constraintLeft_toRightOf="@+id/header"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabPadding="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="-0dp"
+        app:tabSelectedTextColor="@color/primary_text"
+        app:tabTextColor="@color/grey_250">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/TabItem.Card"
+            android:text="Usage Charge" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/Label.Card.La"
+            android:layout_margin="@dimen/margin_large"
+            android:gravity="center"
+            android:text="" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:background="@drawable/surface_white_sheet">
+            <include
+                android:id="@+id/scopeCont"
+                layout="@layout/element_config_scope"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:background="@drawable/surface_white_sheet">
+
+
+
+            <include
+                android:id="@+id/chargeTypeCont"
+                layout="@layout/element_properties_spinner_sm"/>
+
+            <include
+                android:id="@+id/usageChargeCont"
+                layout="@layout/element_properties_amount_sm"/>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Container.Action.Positive.XSmall"
+                android:layout_margin="@dimen/margin_small"
+                android:text="Commit Changes"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridContainer" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

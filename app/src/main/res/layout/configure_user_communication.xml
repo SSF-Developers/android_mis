@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Container.FullWidth"
+    android:orientation="vertical">
+
+    <ScrollView style="@style/Container.FullWidth">
+
+
+        <LinearLayout
+            style="@style/Container.FullWidth"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/Container.Action">
+
+                <LinearLayout style="@style/Container.Action.Field">
+
+                    <TextView
+                        style="@style/FormField.Label"
+                        android:text="Phone Number" />
+
+                    <EditText
+                        android:id="@+id/phoneNumber"
+                        style="@style/FormField.Default"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:id="@+id/phoneErr"
+                        style="@style/FormField.Error" />
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_x_small" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/verifyPhoneNumber"
+                    style="@style/Container.Action.Button">
+
+                    <ImageView
+                        style="@style/ImageHolder.CenterInParent"
+                        android:src="@drawable/vic_verify_inactive"
+                         />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Container.Action">
+
+                <LinearLayout style="@style/Container.Action.Field">
+
+                    <TextView
+                        style="@style/FormField.Label"
+                        android:text="Email" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        style="@style/FormField.Default"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/emailErr"
+                        style="@style/FormField.Error" />
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_x_small" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/verifyEmail"
+                    style="@style/Container.Action.Button">
+
+                    <ImageView
+                        style="@style/ImageHolder.CenterInParent"
+                        android:src="@drawable/vic_verify_inactive" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

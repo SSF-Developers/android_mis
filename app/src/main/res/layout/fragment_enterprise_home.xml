@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Container.FullWidth"
+        app:tabContentStart="56dp"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/text_border_default"
+        app:tabTextColor="@color/grey_300"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/button_default"
+        app:tabUnboundedRipple="true"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Body2"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Enterprise \n Details"
+
+            />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Devices"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Policies"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/Container.WrapContent"
+            android:text="Complex"
+            />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        />
+
+
+</LinearLayout>

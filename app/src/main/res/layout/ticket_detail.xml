@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Page.FullWidth"
+    android:layout_marginTop="@dimen/page_vertical_margin_toolbar">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@style/Container.FullWidth"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/Page.FullWidth"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/ticketRow"
+                layout="@layout/item_ticket_details" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <FrameLayout
+                android:id="@+id/ticketDetailsContainer"
+                style="@style/FormContainer.ListX"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    style="@style/Container.FullWidth"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/Header.Form"
+                            android:text="Summary"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/statusSelectionContainer"
+                            app:layout_constraintBottom_toBottomOf="@+id/statusSelectionContainer"/>
+
+                        <LinearLayout
+                            android:id="@+id/statusSelectionContainer"
+                            style="@style/Container.WrapContent"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/durationLabel"
+                                style="@style/Label.TicketValue.B"
+                                android:text="Actions:" />
+
+                            <Spinner
+                                android:id="@+id/statusSelection"
+                                style="@style/Label.Spinner"
+                                android:background="@color/white" />
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@drawable/vic_drop_down" />
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <Space
+                        style="@style/Container.FullWidth"
+                        android:layout_height="@dimen/margin_normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ticketTitle"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="Title"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText style="@style/FormField.TextInputEditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/description"
+                        style="@style/Widget.App.TextInputLayout"
+                        android:hint="Description"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText style="@style/FormField.TextArea" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photosContainer"
+                style="@style/FormContainer.ListX"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/filesHeader"
+                    style="@style/Header.Form"
+                    android:text="Photos"
+                    app:layout_constraintBottom_toBottomOf="@+id/uploadFile"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/uploadFile" />
+
+                <Space
+                    android:id="@+id/space01"
+                    style="@style/Container.FullWidth"
+                    android:layout_height="@dimen/margin_normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filesHeader" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ticketFiles"
+                    style="@style/Container.FullWidth"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space01" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

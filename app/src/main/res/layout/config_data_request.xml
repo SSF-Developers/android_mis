@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Cards.Normal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/Header.Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Config"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Tab.Card"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        app:layout_constraintLeft_toRightOf="@+id/header"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabPadding="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="-0dp"
+        app:tabSelectedTextColor="@color/primary_text"
+        app:tabTextColor="@color/grey_250">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/TabItem.Card"
+            android:text="Data Request" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/Label.Card.La"
+        android:layout_margin="@dimen/margin_large"
+        android:gravity="center"
+        android:text="@string/description_data_request_config"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/contScopeCont"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_small"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:background="@drawable/surface_white_sheet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description">
+        <include
+            android:id="@+id/scopeCont"
+            layout="@layout/element_client_selection"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/gridContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_normal"
+        android:background="@drawable/surface_white_sheet"
+        android:layout_margin="@dimen/margin_small"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:padding="@dimen/margin_x_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contScopeCont">
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="4">
+
+            <CheckBox
+                android:id="@+id/lightHealth"
+                style="@style/GridField"
+                android:text="HEALTH_LIGHT" />
+
+            <CheckBox
+                android:id="@+id/fanHealth"
+                style="@style/GridField"
+                android:text="HEALTH_FAN" />
+
+            <CheckBox
+                android:id="@+id/flushHealth"
+                style="@style/GridField"
+                android:text="HEALTH_FLUSH" />
+
+            <CheckBox
+                android:id="@+id/floorCleanHealth"
+                style="@style/GridField"
+                android:text="HEALTH_FLOOR_CLEAN" />
+
+            <CheckBox
+                android:id="@+id/averageFeedback"
+                style="@style/GridField"
+                android:text="AVERAGE_FEEDBACK" />
+
+            <CheckBox
+                android:id="@+id/totalUsage"
+                style="@style/GridField"
+                android:text="TOTAL_USAGE" />
+
+            <CheckBox
+                android:id="@+id/waterLevel"
+                style="@style/GridField"
+                android:text="WATER_LEVEL" />
+
+            <CheckBox
+                android:id="@+id/aqi_NH3"
+                style="@style/GridField"
+                android:text="AQI_NH3" />
+
+            <CheckBox
+                android:id="@+id/aqi_CO"
+                style="@style/GridField"
+                android:text="AQI_CO" />
+
+            <CheckBox
+                android:id="@+id/aqi_CH4"
+                style="@style/GridField"
+                android:text="AQI_CH4" />
+
+            <CheckBox
+                android:id="@+id/luminosity"
+                style="@style/GridField"
+                android:text="LUMINOSITY" />
+
+            <CheckBox
+                android:id="@+id/deviceTheft"
+                style="@style/GridField"
+                android:text="DEVICE_THEFT" />
+
+            <CheckBox
+                android:id="@+id/lat"
+                style="@style/GridField"
+                android:text="LATITUDE" />
+
+            <CheckBox
+                android:id="@+id/lon"
+                style="@style/GridField"
+                android:text="LONGITUDE" />
+
+            <CheckBox
+                android:id="@+id/totalRecycledWater"
+                style="@style/GridField"
+                android:text="TOTAL_WATER_RECYCLED" />
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Container.Action.Positive"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="Commit Changes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <ImageButton
+        android:id="@+id/deleteEnterpriseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/undoDeleteEnterpriseButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/delete_new"
+        android:background="#F0F8FF"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageButton
+        android:id="@+id/undoDeleteEnterpriseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/updateEnterpriseButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/undo_delete"
+        android:background="#F0F8FF"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        />
+
+
+    <ImageButton
+        android:id="@+id/updateEnterpriseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit_square"
+        android:background="#F0F8FF"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/generalDetailsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/updateEnterpriseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#F0F8FF"
+        app:cardCornerRadius="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Details"
+                android:textColor="@color/black"
+                android:fontFamily="@font/andika_new_basic_bold"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enterpriseName"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/enterpriseNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enterpriseName"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#343434" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/displayName"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/displayNameValue"
+                    android:layout_width="wrap_content"
+                    android:textColor="#1B1B1B"
+                    android:layout_height="wrap_content"
+                    android:text="@string/displayName"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contactInfoCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generalDetailsCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#F0F8FF"
+        app:cardCornerRadius="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Info"
+                android:textColor="@color/black"
+                android:fontFamily="@font/andika_new_basic_bold"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataProtectionOfficerName"
+                    android:maxLines="2"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/dataProtectionOfficerNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataProtectionOfficerName"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#343434" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataProtectionOfficerEmail"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/dataProtectionOfficerEmailValue"
+                    android:layout_width="wrap_content"
+                    android:textColor="#1B1B1B"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataProtectionOfficerEmail"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#343434" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataProtectionOfficerPhone"
+                    android:maxLines="2"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/dataProtectionOfficerPhoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataProtectionOfficerPhone"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#343434" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euRepresentativeName"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/euRepresentativeNameValue"
+                    android:layout_width="wrap_content"
+                    android:textColor="#1B1B1B"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euRepresentativeName"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#343434" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euRepresentativeEmail"
+                    android:maxLines="2"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/euRepresentativeEmailValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euRepresentativeEmail"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#343434" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euRepresentativePhone"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textColor="#1B1B1B"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/euRepresentativePhoneValue"
+                    android:layout_width="wrap_content"
+                    android:textColor="#1B1B1B"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euRepresentativePhone"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/deleteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="#E6B027"
+        android:textColorHighlight="@color/alert"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactInfoCardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
